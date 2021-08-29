@@ -11,7 +11,7 @@ export const Landing = ({ src }) => {
         return <Home />;
       case "/about":
         return <About />;
-      case "/products-services":
+      case "/services-products":
         return <ProductsServices />;
       case "/contact":
         return <Contact />;

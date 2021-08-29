@@ -1,10 +1,11 @@
-import React from 'react';
-import './Button.scss';
+import React from "react";
+import whatsapp from "../../../assets/images/Whatsapp.png";
+import "./Button.scss";
 
-export const Button = ({ type, className, children, kind }) => {
+export const Button = () => {
   return (
-    <button type={type} className={`custom-button ${className}`}>
-      {children}
+    <button id='whatsapp-button' className="custom-contact-button" type="button">
+      <img src={whatsapp} alt="whatsapp" />
     </button>
   );
 };

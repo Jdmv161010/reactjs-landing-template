@@ -1,1 +1,19 @@
-@import '../../../styles/styles.scss';
+#whatsapp-button {
+  height: 65px;
+  width: 65px;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0px 0px 8px #999;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+}

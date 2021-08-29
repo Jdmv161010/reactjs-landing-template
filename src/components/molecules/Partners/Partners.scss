@@ -1,0 +1,27 @@
+#Partners {
+  background: #4a6670;
+
+  .custom-content-section {
+    height: 180px;
+  }
+
+  .custom-image-content {
+    width: 130px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  img {
+    width: 100%;
+  }
+}

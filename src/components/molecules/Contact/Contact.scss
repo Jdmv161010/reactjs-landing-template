@@ -1,0 +1,43 @@
+#Contact {
+  background: #182825;
+  color: white;
+  padding: 0 150px;
+  padding-bottom: 20px;
+
+  .custom-content-section {
+    height: 400px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-contact-info {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .custom-contact-networks {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+  }
+
+  .custom-contact-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .custom-contact-location {
+    font-size: 14px;
+  }
+
+  .custom-copyright {
+    color: gray;
+    margin-bottom: 100px !important;
+  }
+}

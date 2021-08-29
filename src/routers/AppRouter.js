@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Button } from "../components/atoms/Button/Button";
 import { Navbar } from "../components/atoms/Navbar/Navbar";
 import { Landing } from "../components/templates/Landing/Landing";
 
 export const AppRouter = () => {
   const options = [
     { route: "/about", label: "Acerca de nosotros" },
-    { route: "/products-services", label: "Productos y servicios" },
+    { route: "/services-products", label: "Servicios y productos" },
     { route: "/contact", label: "Contáctenos" },
   ];
   return (
@@ -33,6 +34,7 @@ export const AppRouter = () => {
           ))}
         </Switch>
       </div>
+      <Button />
     </Router>
   );
 };
