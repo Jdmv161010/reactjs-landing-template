@@ -16,18 +16,20 @@ export const AboutUs = () => {
   return (
     <div id="AboutUs">
       <div className="custom-content-section">
-        <span className="custom-title-span">Acerca de nosotos</span>
-        <span style={{ width: "60%", marginTop: "20px" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at leo
-          egestas, ullamcorper felis vitae, tristique lorem. Aenean sit amet mi
-          nibh. Integer et turpis accumsan, porta felis ut, sollicitudin sem.
-          Suspendisse interdum ultrices ex nec ultrices. Nunc ornare rhoncus
-          pretium. <Link to="/about">Ver más</Link>
-        </span>
-      </div>
+        <div className="custom-header-content">
+          <span className="custom-title-span">Acerca de nosotos</span>
+          <span className="custom-subtitle-span" style={{ width: "70%" }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at leo
+            egestas, ullamcorper felis vitae, tristique lorem. Aenean sit amet
+            mi nibh. Integer et turpis accumsan, porta felis ut, sollicitudin
+            sem. Suspendisse interdum ultrices ex nec ultrices. Nunc ornare
+            rhoncus pretium. <Link to="/about">Ver más</Link>
+          </span>
+        </div>
 
-      <div className="custom-card-container">
-        {statics.map(() => staticsCard())}
+        <div className="custom-card-container">
+          {statics.map(() => staticsCard())}
+        </div>
       </div>
     </div>
   );

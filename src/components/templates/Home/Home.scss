@@ -6,6 +6,7 @@
 
 #Home {
   #Section1 {
+    margin: 0 !important;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.5),
@@ -22,41 +23,11 @@
     justify-content: center;
   }
 
-  #Section3 {
-    flex-direction: column;
-    .custom-subtitle-span {
-      color: gray;
-    }
-
-    .custom-service-card {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 400px;
-      height: 200px;
-      border: 1px solid black;
-    }
-
-    .custom-img-service-card {
-      height: 60px;
-      width: 60px;
-      background: gray;
-    }
-
-    .custom-service-card-img {
-      height: 100%;
-      background: blue;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    .custom-content-card-service {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
+  #Section2,
+  #Section3,
+  #Section4,
+  #Section5 {
+    background: #0d0d0d;
+    border-bottom: 1px solid white;
   }
 }

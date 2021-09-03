@@ -1,7 +1,6 @@
 import React from "react";
-import item from "../../../assets/images/item.png";
 import { AboutUs } from "../../molecules/AboutUs/AboutUs";
-import { Carousel } from "../../molecules/Carousel/Carousel";
+import { ChooseUs } from "../../molecules/ChooseUs/ChooseUs";
 import { Contact } from "../../molecules/Contact/Contact";
 import { Partners } from "../../molecules/Partners/Partners";
 import { ServiceProduct } from "../../molecules/ServiceProduct/ServiceProduct";
@@ -13,7 +12,7 @@ export const Home = () => {
       <div
         id="Section1"
         className="custom-content-section"
-        style={{ height: "70vh" }}
+        style={{ height: "70vh", margin: "0 !important" }}
       >
         <span className="custom-title-span">
           Aplicaciones empresariales que transforman su negocio
@@ -32,6 +31,9 @@ export const Home = () => {
       </div>
       <div id="Section4">
         <Partners />
+      </div>
+      <div id="Section5">
+        <ChooseUs />
       </div>
       <div id="Section5">
         <Contact />

@@ -17,6 +17,18 @@ export const Contact = () => {
             Cali, Valle del Cauca, Colombia
           </span>
         </div>
+        <div className="custom-contact-info" style={{ flex: 2 }}>
+          <span className="custom-contact-title">Enlaces de interes</span>
+          <span className="custom-contact-location">
+            Contacto: (+57) 3147943431
+          </span>
+          <span className="custom-contact-location">
+            Dirección: Calle 10 #4-40 Oficina 1001, Edificio Bolsa de Occidente.
+          </span>
+          <span className="custom-contact-location">
+            Cali, Valle del Cauca, Colombia
+          </span>
+        </div>
         <div className="custom-contact-networks" style={{ flex: 1 }}>
           <span className="custom-contact-title">Siguenos</span>
           <div>ICONOS</div>

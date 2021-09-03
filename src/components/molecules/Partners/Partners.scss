@@ -1,16 +1,9 @@
 #Partners {
-  background: #4a6670;
+  // background: #4a6670;
 
   .custom-content-section {
     height: 180px;
-  }
-
-  .custom-image-content {
-    width: 130px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
   }
 
   .custom-image-container {
@@ -19,6 +12,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  .custom-image-content {
+    width: 130px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   img {
