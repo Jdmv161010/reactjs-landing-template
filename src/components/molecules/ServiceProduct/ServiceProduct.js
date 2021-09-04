@@ -7,14 +7,10 @@ export const ServiceProduct = () => {
 
   const staticsCard = () => (
     <div className="custom-card">
-      <div className="custom-card-img" style={{ flex: 1 }}>
-        <div className="img"></div>
-      </div>
-      <div className="custom-card-content" style={{ flex: 3 }}>
-        <span style={{ fontWeight: 600, textAlign: "left", color: "black" }}>
-          Lorem Ipsum
-        </span>
-        <span style={{ width: "95%", textAlign: "justify", color: "black" }}>
+      <div className="custom-card-img"></div>
+      <div className="custom-card-content" style={{ flex: 1 }}>
+        <span style={{ fontWeight: 600 }}>Lorem Ipsum</span>
+        <span style={{ textAlign: "justify" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis suscipit
           efficitur nisl, in mattis odio posuere non. Quisque sagittis nisl
           sapien, ac fringilla nisi tristique non. Sed vitae feugiat odio,
@@ -25,20 +21,20 @@ export const ServiceProduct = () => {
   );
 
   return (
-    <div id="ServiceProduct">
-      <div className="custom-content-section" style={{ height: "600px" }}>
-        <div className="custom-header-content">
-          <span className="custom-title-span">Servicios y productos</span>
-          <span className="custom-subtitle-span">
-            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur. <Link to="/services-products">Ver más</Link>
-          </span>
-        </div>
+    <div id="ServiceProduct" className="custom-content-section">
+      <div className="custom-header-content">
+        <span className="custom-title-span">Servicios y productos</span>
+        <span className="custom-subtitle-span">
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+          consectetur. <Link to="/services-products">Ver más</Link>
+        </span>
+      </div>
 
-        <div className="custom-card-container" style={{ flexWrap: "wrap" }}>
-          {services.map(() => staticsCard())}
-        </div>
+      <div className="custom-card-container">
+        {services.map(() => staticsCard())}
       </div>
     </div>
   );
 };
+
+// style={{ flexWrap: "wrap" }}

@@ -1,21 +1,11 @@
 #ChooseUs {
-
-  .custom-content-section {
-    flex-direction: row;
-    padding: 60px;
-  }
-
-  .custom-header-content {
-    align-items: flex-start;
-  }
-
-  .custom-card-img {
-    background: white;
-  }
+  background: #183059;
+  flex-direction: row;
+  padding: 30px;
 
   .custom-aux-image-container {
     width: auto;
-    height: 100%;
+    height: 100% !important;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -23,29 +13,24 @@
 
   .custom-aux-image {
     background: white;
-    width: 350px;
-    height: 350px;
-    border-radius: 10px;
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .custom-aux-content {
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
   }
 
-  .custom-card-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  .custom-header-content {
+    align-items: flex-start;
   }
 
   span {
