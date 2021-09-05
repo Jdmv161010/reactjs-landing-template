@@ -21,28 +21,23 @@
 
 
 
-  .custom-aux-image-container {
-    width: auto;
-    height: 100% !important;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    video {
-      position:fixed;
-      height: 100%;
-      z-index: -100;
-    }
-  }
+  // .custom-aux-image-container {
+  //   width: auto;
+  //   height: 100% !important;
+  //   display: flex;
+  //   justify-content: flex-start;
+  //   align-items: center;
+  // }
 
-  .custom-aux-image {
-    background: white;
-    width: 320px;
-    height: 320px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  // .custom-aux-image {
+  //   background: white;
+  //   width: 320px;
+  //   height: 320px;
+  //   border-radius: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 
   .custom-aux-content {
     height: auto;

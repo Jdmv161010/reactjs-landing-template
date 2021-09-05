@@ -16,9 +16,9 @@ export const ChooseUs = () => {
 
   return (
     <div id="ChooseUs" className="custom-content-section">
-      {/* <div className="custom-aux-image-container" style={{ flex: 1 }}>
+      <div className="custom-aux-image-container" style={{ flex: 1 }}>
         <div className="custom-aux-image"></div>
-      </div> */}
+      </div>
 
 
       <div className="custom-aux-content" style={{ flex: 2.5 }}>
