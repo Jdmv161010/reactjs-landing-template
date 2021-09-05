@@ -3,7 +3,7 @@ import Avianca_logo from "../../../assets/images/IconPartners/Avianca_logo.png";
 import celsia from "../../../assets/images/IconPartners/celsia.png";
 import microsoft from "../../../assets/images/IconPartners/microsoft.png";
 import coomeva from "../../../assets/images/IconPartners/coomeva_icon.png";
-import icesi from "../../../assets/images/IconPartners/logo-icesi.png";
+import icesi from "../../../assets/images/IconPartners/icesi.png";
 import "./Partners.scss";
 
 export const Partners = () => {
