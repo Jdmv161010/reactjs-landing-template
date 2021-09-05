@@ -9,7 +9,39 @@ export const AboutUs = () => {
     <div className="custom-card">
       <div className="custom-card-img"></div>
       <span className="custom-card-value">96</span>
-      <span>lorem</span>
+      <span>Premio 1</span>
+    </div>
+  );
+  const staticsCard2 = () => (
+    <div className="custom-card">
+      <div className="custom-card-img">
+      </div>
+      <span className="custom-card-value">96</span>
+      <span>Premio 2</span>
+    </div>
+  );
+  const staticsCard3 = () => (
+    <div className="custom-card">
+      <div className="custom-card-img">
+      </div>
+      <span className="custom-card-value">96</span>
+      <span>Premio 3</span>
+    </div>
+  );
+  const staticsCard4 = () => (
+    <div className="custom-card">
+      <div className="custom-card-img">
+      </div>
+      <span className="custom-card-value">96</span>
+      <span>Premio 4</span>
+    </div>
+  );
+  const staticsCard5 = () => (
+    <div className="custom-card">
+      <div className="custom-card-img">
+      </div>
+      <span className="custom-card-value">96</span>
+      <span>Premio 4</span>
     </div>
   );
 
@@ -27,7 +59,11 @@ export const AboutUs = () => {
       </div>
 
       <div className="custom-card-container">
-        {statics.map(() => staticsCard())}
+        {staticsCard()}
+        {staticsCard2()}
+        {staticsCard3()}
+        {staticsCard4()}
+        {staticsCard5()}
       </div>
     </div>
   );
