@@ -12,7 +12,7 @@ export const Home = () => {
       <div
         id="Section1"
         className="custom-content-section"
-        style={{ height: "70vh", margin: "0 !important" }}
+        style={{ margin: "0 !important" }}
       >
         <span className="custom-title-span">
           Aplicaciones empresariales que transforman su negocio

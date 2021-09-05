@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./ServiceProduct.scss";
+import "animate.css";
 
 export const ServiceProduct = () => {
   const services = [1, 2, 3, 4];
+  const classes = "animate__animated animate__pulse";
+  const [hover, setHover] = useState(false);
 
   const staticsCard = () => (
     <div className="custom-card">
