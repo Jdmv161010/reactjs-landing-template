@@ -1,7 +1,24 @@
 #ChooseUs {
   background: #183059;
+  margin: 0 !important;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+    url("../../../assets/images/BackGrounds/BG_WhyUs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   flex-direction: row;
   padding: 70px 30px;
+
+
 
   .custom-aux-image-container {
     width: auto;

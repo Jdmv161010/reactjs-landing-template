@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ChooseUs.scss";
 
+
 export const ChooseUs = () => {
   const statics = [1, 2, 3, 4];
 
