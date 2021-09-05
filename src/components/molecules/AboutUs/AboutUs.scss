@@ -1,4 +1,19 @@
 #AboutUs{
-    background: #153131
-    
+    background: #153131;
+    margin: 0 !important;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+    url("../../../assets/images/BackGrounds/BG_AboutUs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      
 }
