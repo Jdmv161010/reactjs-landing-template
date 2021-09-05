@@ -8,40 +8,40 @@ export const AboutUs = () => {
   const staticsCard = () => (
     <div className="custom-card">
       <div className="custom-card-img"></div>
-      <span className="custom-card-value">96</span>
-      <span>Premio 1</span>
+      <span className="custom-card-value"><h10>Microsoft Dynamics CRM</h10></span>
+      <span>en Colombia</span>
     </div>
   );
   const staticsCard2 = () => (
     <div className="custom-card">
       <div className="custom-card-img">
       </div>
-      <span className="custom-card-value">96</span>
-      <span>Premio 2</span>
+      <span className="custom-card-value"><h10>Microsoft Dynamics CRM</h10></span>
+      <span>en Latinoamérica y Caribe</span>
     </div>
   );
   const staticsCard3 = () => (
     <div className="custom-card">
       <div className="custom-card-img">
       </div>
-      <span className="custom-card-value">96</span>
-      <span>Premio 3</span>
+      <span className="custom-card-value"><h10>Microsoft en Seguridad</h10></span>
+      <span>en Sector Público y Seguridad Nacional</span>
     </div>
   );
   const staticsCard4 = () => (
     <div className="custom-card">
       <div className="custom-card-img">
       </div>
-      <span className="custom-card-value">96</span>
-      <span>Premio 4</span>
+      <span className="custom-card-value"><h10>Microsoft Consulting Services</h10></span>
+      <span>en Colombia</span>
     </div>
   );
   const staticsCard5 = () => (
     <div className="custom-card">
       <div className="custom-card-img">
       </div>
-      <span className="custom-card-value">96</span>
-      <span>Premio 4</span>
+      <span className="custom-card-value"><h10>Gold Partner</h10></span>
+      <span>Microsoft</span>
     </div>
   );
 
