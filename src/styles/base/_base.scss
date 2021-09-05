@@ -41,7 +41,7 @@ span {
 }
 
 .custom-subtitle-span {
-  color: darken($color: white, $amount: 30);
+  color: white;
   text-align: center;
   font-size: 18px;
   font-weight: 400;
@@ -86,6 +86,6 @@ span {
 }
 
 .custom-card-value {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
 }

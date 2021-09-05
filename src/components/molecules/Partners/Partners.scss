@@ -1,9 +1,5 @@
 #Partners {
-  // background: #576490;
-  // background: #05c7f2; 
-  background: #0d0d0d; 
-  background: rgb(22, 22, 22); 
-
+  background: lighten($color: #0d0d0d, $amount: 10);
 
   .custom-content-section {
     height: 180px;

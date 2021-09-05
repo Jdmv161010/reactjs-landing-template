@@ -1,28 +1,25 @@
-#AboutUs{
-    background: #153131;
-    margin: 0 !important;
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
+#AboutUs {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
     url("../../../assets/images/BackGrounds/BG_AboutUs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .custom-card {
+    flex: 1;
+  }
+
+  .custom-card-img {
+    backdrop-filter: blur(5px) saturate(100%);
+    -webkit-backdrop-filter: blur(5px) saturate(100%);
+    background-color: rgba(17, 25, 40, 0.6);
+    border: 1px solid #05c7f2;
+    background-image: url("../../../assets/images/Premio_AboutUs.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    div.custom-card-img{
-        background-color: #0d0d0d;
-        background-image: url("../../../assets/images/Premio_AboutUs.svg");
-        background-repeat: no-repeat;
-        background-size: 85%;
-        background-position: center;
-      
-      }
-      
+    background-size: 80%;
+    background-position: center;
+  }
 }

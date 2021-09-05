@@ -1,46 +1,19 @@
 #ChooseUs {
-  background: #183059;
-  margin: 0 !important;
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
     url("../../../assets/images/BackGrounds/BG_WhyUs.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding-right: 60px;
+  display: flex;
   flex-direction: row;
-  padding: 70px 30px;
- 
-
-
-
-  // .custom-aux-image-container {
-  //   width: auto;
-  //   height: 100% !important;
-  //   display: flex;
-  //   justify-content: flex-start;
-  //   align-items: center;
-  // }
-
-  // .custom-aux-image {
-  //   background: white;
-  //   width: 320px;
-  //   height: 320px;
-  //   border-radius: 100%;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
 
   .custom-aux-content {
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +24,22 @@
     align-items: flex-start;
   }
 
+  .custom-card-container {
+    justify-content: space-between;
+  }
+
+  .custom-card-img {
+    backdrop-filter: blur(5px) saturate(100%);
+    -webkit-backdrop-filter: blur(5px) saturate(100%);
+    background-color: rgba(17, 25, 40, 0.6);
+    border: 1px solid #05c7f2;
+    // background-image: url("../../../assets/images/Premio_AboutUs.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+  }
+
   span {
-    text-align: left;
+    text-align: justify;
   }
 }

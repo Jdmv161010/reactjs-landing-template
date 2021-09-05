@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ChooseUs.scss";
 
-
 export const ChooseUs = () => {
   const statics = [1, 2, 3, 4];
 
@@ -15,19 +14,12 @@ export const ChooseUs = () => {
   );
 
   return (
-    <div id="ChooseUs" className="custom-content-section">
-      <div className="custom-aux-image-container" style={{ flex: 1 }}>
-        <div className="custom-aux-image"></div>
-      </div>
-
-
-      <div className="custom-aux-content" style={{ flex: 2.5 }}>
+    <div id="ChooseUs">
+      <div style={{ flex: 1.1 }}></div>
+      <div className="custom-content-section" style={{ flex: 1.9 }}>
         <div className="custom-header-content">
           <span className="custom-title-span">¿Por qué escogernos?</span>
-          <span
-            className="custom-subtitle-span"
-            style={{ textAlign: "justify" }}
-          >
+          <span className="custom-subtitle-span" style={{ width: "100%" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at leo
             egestas, ullamcorper felis vitae, tristique lorem. Aenean sit amet
             mi nibh. Integer et turpis accumsan, porta felis ut, sollicitudin

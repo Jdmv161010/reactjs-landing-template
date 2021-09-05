@@ -15,14 +15,23 @@ export const Home = () => {
         className="custom-content-section"
         style={{ margin: "0 !important" }}
       >
-        <video className="video" preload="auto" autoplay="true" loop="loop" aria-hidden="true" playsinline="true" muted volume="0">
-          <source src={BG_Principal} type="video/mp4"/>
+        <video
+          className="video"
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          aria-hidden="true"
+          playsinline="true"
+          muted
+          volume="0"
+        >
+          <source src={BG_Principal} type="video/mp4" />
         </video>
-        <span className="custom-title-span">
+        <span className="custom-title-span" style={{ width: "100%" }}>
           Aplicaciones empresariales que transforman su negocio
         </span>
 
-        <span className="custom-subtitle-span">
+        <span className="custom-subtitle-span" style={{ width: "50%" }}>
           Simplificación y conexión de procesos empresariales y mejoramiento de
           las interacciones y relaciones con sus clientes
         </span>

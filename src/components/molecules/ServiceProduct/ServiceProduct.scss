@@ -6,8 +6,7 @@
   }
 
   .custom-card {
-    // background: #CC7178;
-    background: rgb(22, 22, 22);
+    background:lighten($color: #0d0d0d, $amount: 30);
     width: 45%;
     max-width: 45%;
     height: auto;

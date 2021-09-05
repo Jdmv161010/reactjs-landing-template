@@ -4,35 +4,20 @@ import celsia from "../../../assets/images/IconPartners/celsia.png";
 import microsoft from "../../../assets/images/IconPartners/microsoft.png";
 import coomeva from "../../../assets/images/IconPartners/coomeva_icon.png";
 import icesi from "../../../assets/images/IconPartners/logo-icesi.png";
-import auxLogo from "../../../assets/images/auxLogo.png";
 import "./Partners.scss";
 
 export const Partners = () => {
-  const logos = [1, 2, 3, 4, 5, 6];
+  const logos = [
+    { image: microsoft, alt: "microsoft" },
+    { image: Avianca_logo, alt: "Avianca_logo" },
+    { image: coomeva, alt: "coomeva" },
+    { image: celsia, alt: "celsia" },
+    { image: icesi, alt: "icesi" },
+  ];
 
-  const logo = () => (
+  const logo = (image, alt) => (
     <div className="custom-image-content">
-      <img src={microsoft} alt="logo" />
-    </div>
-  );
-  const logo2 = () => (
-    <div className="custom-image-content">
-      <img src={Avianca_logo} alt="logo" />
-    </div>
-  );
-  const logo3 = () => (
-    <div className="custom-image-content">
-      <img src={coomeva} alt="logo" />
-    </div>
-  );
-  const logo4 = () => (
-    <div className="custom-image-content">
-      <img src={celsia} alt="logo" />
-    </div>
-  );
-  const logo5 = () => (
-    <div className="custom-image-content">
-      <img src={icesi} alt="logo" />
+      <img src={image} alt={alt} />
     </div>
   );
 
@@ -40,12 +25,8 @@ export const Partners = () => {
     <div id="Partners">
       <div className="custom-content-section">
         <div className="custom-image-container">
-          {logo()}
-          {logo2()}
-          {logo3()}
-          {logo4()}
-          {logo5()}
-          </div>
+          {logos.map(({ image, alt }) => logo(image, alt))}
+        </div>
       </div>
     </div>
   );
