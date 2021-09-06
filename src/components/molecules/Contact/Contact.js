@@ -17,6 +17,10 @@ export const Contact = () => {
         </div>
         <div className="custom-contact-info" style={{ flex: 1 }}>
           <span className="custom-contact-title">Enlaces de interes</span>
+          <span className="custom-contact-location">
+          <li><a href="https://adsecurity.co/">Ad - Security </a></li>
+          <li><a href="https://www.xrm.com.co/">xRM</a></li>
+          </span>
         </div>
         <div className="custom-contact-info" style={{ flex: 1 }}>
           <span className="custom-contact-title">Siguenos</span>
@@ -27,7 +31,7 @@ export const Contact = () => {
           <a href="https://twitter.com/IntelectoLtda"><img width="60" heigth="60" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1NiAwYy0xNDEuMzYzMjgxIDAtMjU2IDExNC42MzY3MTktMjU2IDI1NnMxMTQuNjM2NzE5IDI1NiAyNTYgMjU2IDI1Ni0xMTQuNjM2NzE5IDI1Ni0yNTYtMTE0LjYzNjcxOS0yNTYtMjU2LTI1NnptMTE2Ljg4NjcxOSAxOTkuNjAxNTYyYy4xMTMyODEgMi41MTk1MzIuMTY3OTY5IDUuMDUwNzgyLjE2Nzk2OSA3LjU5Mzc1IDAgNzcuNjQ0NTMyLTU5LjEwMTU2MyAxNjcuMTc5Njg4LTE2Ny4xODM1OTQgMTY3LjE4MzU5NGguMDAzOTA2LS4wMDM5MDZjLTMzLjE4MzU5NCAwLTY0LjA2MjUtOS43MjY1NjItOTAuMDY2NDA2LTI2LjM5NDUzMSA0LjU5NzY1Ni41NDI5NjkgOS4yNzczNDMuODEyNSAxNC4wMTU2MjQuODEyNSAyNy41MzEyNSAwIDUyLjg2NzE4OC05LjM5MDYyNSA3Mi45ODA0NjktMjUuMTUyMzQ0LTI1LjcyMjY1Ni0uNDc2NTYyLTQ3LjQxMDE1Ni0xNy40NjQ4NDMtNTQuODk0NTMxLTQwLjgxMjUgMy41ODIwMzEuNjg3NSA3LjI2NTYyNSAxLjA2MjUgMTEuMDQyOTY5IDEuMDYyNSA1LjM2MzI4MSAwIDEwLjU1ODU5My0uNzIyNjU2IDE1LjQ5NjA5My0yLjA3MDMxMi0yNi44ODY3MTgtNS4zODI4MTMtNDcuMTQwNjI0LTI5LjE0NDUzMS00Ny4xNDA2MjQtNTcuNTk3NjU3IDAtLjI2NTYyNCAwLS41MDM5MDYuMDA3ODEyLS43NSA3LjkxNzk2OSA0LjQwMjM0NCAxNi45NzI2NTYgNy4wNTA3ODIgMjYuNjEzMjgxIDcuMzQ3NjU3LTE1Ljc3NzM0My0xMC41MjczNDQtMjYuMTQ4NDM3LTI4LjUyMzQzOC0yNi4xNDg0MzctNDguOTEwMTU3IDAtMTAuNzY1NjI0IDIuOTEwMTU2LTIwLjg1MTU2MiA3Ljk1NzAzMS0yOS41MzUxNTYgMjguOTc2NTYzIDM1LjU1NDY4OCA3Mi4yODEyNSA1OC45Mzc1IDEyMS4xMTcxODcgNjEuMzk0NTMyLTEuMDA3ODEyLTQuMzA0Njg4LTEuNTI3MzQzLTguNzg5MDYzLTEuNTI3MzQzLTEzLjM5ODQzOCAwLTMyLjQzNzUgMjYuMzE2NDA2LTU4Ljc1MzkwNiA1OC43NjU2MjUtNTguNzUzOTA2IDE2LjkwMjM0NCAwIDMyLjE2Nzk2OCA3LjE0NDUzMSA0Mi44OTA2MjUgMTguNTY2NDA2IDEzLjM4NjcxOS0yLjY0MDYyNSAyNS45NTcwMzEtNy41MzEyNSAzNy4zMTI1LTE0LjI2MTcxOS00LjM5NDUzMSAxMy43MTQ4NDQtMTMuNzA3MDMxIDI1LjIyMjY1Ny0yNS44Mzk4NDQgMzIuNSAxMS44ODY3MTktMS40MjE4NzUgMjMuMjE0ODQ0LTQuNTc0MjE5IDMzLjc0MjE4Ny05LjI1MzkwNi03Ljg2MzI4MSAxMS43ODUxNTYtMTcuODM1OTM3IDIyLjEzNjcxOS0yOS4zMDg1OTMgMzAuNDI5Njg3em0wIDAiIGZpbGw9IiMwNWM3ZjIiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD48L2c+PC9zdmc+" /></a>
           </div>
           <span className="custom-contact-location">
-            Política de privacidad
+          <a href="https://img1.wsimg.com/blobby/go/9d5f89f5-7868-49b1-bc4c-48a2c35d2dec/downloads/Politica%20tratamiento%20de%20datos%20Intelecto%20SAS%20(0.pdf?ver=1602622795171" alt="Política de tratamiento de datos Inteleco SAS (pdf)">Política de privacidad</a>
           </span>
         </div>
       </div>
