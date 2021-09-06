@@ -7,7 +7,10 @@ export const Navbar = ({ options }) => {
     <nav className="custom-navbar">
       <div className="custom-navbar-brand">
         <div>
-          <Link to="/">LOGO</Link>
+          <Link to="/">
+            <div className='LOGO'>
+            </div>
+          </Link>
         </div>
       </div>
 
