@@ -12,6 +12,16 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
+    
+    #Icono{
+      height: 50px;
+      width: 100%;
+      display: inline-table;
+
+      img{
+        padding-right: 10px;
+      }
+    }
   }
 
   .custom-contact-title {
