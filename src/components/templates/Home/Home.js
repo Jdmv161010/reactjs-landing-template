@@ -1,7 +1,6 @@
 import React from "react";
 import { AboutUs } from "../../molecules/AboutUs/AboutUs";
 import { ChooseUs } from "../../molecules/ChooseUs/ChooseUs";
-import { Contact } from "../../molecules/Contact/Contact";
 import { Partners } from "../../molecules/Partners/Partners";
 import { ServiceProduct } from "../../molecules/ServiceProduct/ServiceProduct";
 import BG_Principal from "../../../assets/images/BackGrounds/BG_Principal.mp4";
@@ -56,9 +55,6 @@ export const Home = () => {
       </div>
       <div id="Section5">
         <ChooseUs />
-      </div>
-      <div id="Section5">
-        <Contact />
       </div>
     </div>
   );

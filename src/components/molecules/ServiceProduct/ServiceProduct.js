@@ -45,7 +45,7 @@ export const ServiceProduct = () => {
         ></img>
       </div>
       <div className="custom-card-content" style={{ flex: 1 }}>
-        <span style={{ fontWeight: 600}}>{title}</span>
+        <span style={{ fontWeight: 600 }}>{title}</span>
         <span style={{ textAlign: "justify" }}>{detail}</span>
       </div>
     </div>
