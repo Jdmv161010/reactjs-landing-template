@@ -28,7 +28,6 @@ export const Partners = () => {
     { id: 17, image: Avianca_logo, alt: "Avianca_logo" },
     { id: 18, image: coomeva, alt: "coomeva" },
     { id: 19, image: celsia, alt: "celsia" },
-    { id: 20, image: icesi, alt: "icesi" },
   ];
 
   const [carousel, setCarousel] = useState(
@@ -37,9 +36,7 @@ export const Partners = () => {
 
   const handleChangeNext = () => {
     if (partners[1] === 20) {
-      partners[1] = 0;
-    } else if (partners[0] === 20) {
-      partners[1] = 5;
+      partners = [0, 5];
     } else {
       partners = [partners[0] + 1, partners[1] + 1];
     }
@@ -61,6 +58,17 @@ export const Partners = () => {
 
   return (
     <div id="Partners">
+      <span
+        className="custom-title-span"
+        style={{
+          width: "50%",
+          // background: "red",
+          textAlign: "left",
+          margin: "10px 70px",
+        }}
+      >
+        Partners
+      </span>
       <div className="custom-content-section">
         <div className="custom-image-container">
           {carousel.map(({ image, alt }) => logo(image, alt))}

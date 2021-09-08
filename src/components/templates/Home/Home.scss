@@ -21,9 +21,23 @@
       z-index: -100;
     }
 
-    // .custom-title-span {
-    //   color: #0d0d0d;
-    // }
+    .custom-partner-button {
+      width: 250px;
+      height: 60px;
+      margin: 30px;
+      color: white;
+      background: #05c7f2;
+      box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 
   #Section2,
