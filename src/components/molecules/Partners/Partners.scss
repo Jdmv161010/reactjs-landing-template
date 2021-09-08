@@ -1,5 +1,7 @@
 #Partners {
   background: lighten($color: #0d0d0d, $amount: 10);
+  display: flex;
+  flex-direction: column;
 
   .custom-content-section {
     height: 180px;

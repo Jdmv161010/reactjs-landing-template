@@ -35,6 +35,15 @@ export const Home = () => {
           Simplificación y conexión de procesos empresariales y mejoramiento de
           las interacciones y relaciones con sus clientes
         </span>
+
+        <button className="custom-partner-button">
+          <a
+            target="_blank"
+            href="https://www.microsoft.com/en-us/solution-providers/partnerdetails/intelecto_bfcc0776-5e02-48ae-a562-ccdd5f4b9ea0/e7416b38-7167-4b51-9f15-ed8debf4c1bb"
+          >
+            Socio Microsoft
+          </a>
+        </button>
       </div>
       <div id="Section2">
         <AboutUs />
