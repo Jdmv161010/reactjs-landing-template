@@ -26,11 +26,7 @@ export const AboutUs = () => {
       <div className="custom-header-content">
         <span className="custom-title-span">Acerca de nosotos</span>
         <span className="custom-subtitle-span" style={{ width: "70%" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at leo
-          egestas, ullamcorper felis vitae, tristique lorem. Aenean sit amet mi
-          nibh. Integer et turpis accumsan, porta felis ut, sollicitudin sem.
-          Suspendisse interdum ultrices ex nec ultrices. Nunc ornare rhoncus
-          pretium. <Link to="/about">Ver más</Link>
+          Empresa vallecaucana con más de 19 años de experiencia en apoyo tecnológico en el sector público y privado, especializados en el área de Proyectos de CRM, Desarrollo a la medida, Infraestructura y Azure. Atendiendo al cliente con altos estándares de calidad, servicio y sentido de pertenencia. <Link to="/about">Ver más</Link>
         </span>
       </div>
 
