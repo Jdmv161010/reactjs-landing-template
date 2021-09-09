@@ -8,28 +8,28 @@ import "./About.scss";
 export const About = () => {
   const services = [
     {
-      title: "Microsoft Dynamics CRM en Colombia",
+      title: "Microsoft Dynamics CRM en Colombia.",
       detail:
-        "Socio del Año de Microsoft Dynamics CRM en Colombia en 2009, 2011, 2012, 2013 y 2015",
+        "Socio del Año de Microsoft Dynamics CRM en Colombia en 2009, 2011, 2012, 2013 y 2015.",
     },
     {
-      title: "Microsoft Dynamics CRM en Latinoamérica y Caribe",
+      title: "Microsoft Dynamics CRM en Latinoamérica y Caribe.",
       detail:
-        "Socio del Año de Microsoft Dynamics CRM en Latinoamérica y Caribe en 2008 y 2009",
+        "Socio del Año de Microsoft Dynamics CRM en Latinoamérica y Caribe en 2008 y 2009.",
     },
     {
-      title: "Microsoft en Seguridad en Sector Público y Seguridad Nacional",
+      title: "Microsoft en Seguridad en Sector Público y Seguridad Nacional.",
       detail:
-        "Socio del Año de Microsoft en Seguridad en Sector Público y Seguridad Nacional en Latinoamérica y Caribe en 2014 y 2016",
+        "Socio del Año de Microsoft en Seguridad en Sector Público y Seguridad Nacional en Latinoamérica y Caribe en 2014 y 2016.",
     },
     {
-      title: "Microsoft Consulting Services en Colombia",
+      title: "Microsoft Consulting Services en Colombia.",
       detail:
-        "Socio de Servicios del Año en Microsoft en Colombia en 2014 y 2015",
+        "Socio de Servicios del Año en Microsoft en Colombia en 2014 y 2015.",
     },
     {
-      title: "Microsoft Gold Partner",
-      detail: "Somos Gold Partner de Microsoft desde hace más de 10 años",
+      title: "Microsoft Gold Partner.",
+      detail: "Somos Gold Partner de Microsoft desde hace más de 10 años.",
     },
   ];
 
@@ -56,22 +56,22 @@ export const About = () => {
 
       <div id="AboutSection1" className="custom-content-section">
         <div className="custom-row">
-          <div className="custom-image-container">imagen</div>
+          <div className="custom-image-container_1"></div>
           <div className="custom-content" style={{ flex: "0.7" }}>
             <span
               className="custom-title-span"
               style={{ textAlign: "center", marginBottom: "10px" }}
             >
-              Titulo
             </span>
             <span className="custom-subtitle-span">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            Intelecto Soluciones y Tecnología S.A.S. fue creada en abril de 2002, 
+            en la ciudad de Cali. 
+            <br/>
+            <br/>
+            Rápidamente obtuvo participación 
+            en proyectos tecnológicos de grandes empresas en la región de 
+            distintos sectores, ayudándolas a mejorar sus procesos empresariales. 
+            De igual manera se destacó y logró entrar a competir en proyectos a nivel nacional. 
             </span>
           </div>
         </div>
@@ -81,21 +81,20 @@ export const About = () => {
               className="custom-title-span"
               style={{ textAlign: "center", marginBottom: "15px" }}
             >
-              Titulo
             </span>
             <span className="custom-subtitle-span">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem.
+            El auge de la transformación tecnológica le abre las puertas en importantes empresas, 
+            consiguiendo así altos estándares y reconocimientos a nivel latinoamericano.
+            <br/>
+            <br/>
+            Intelecto es Socio Gold de Microsoft, destacándose a lo largo de su trayectoria 
+            en servicios especializados de consultoría en Microsoft Dynamics 365, 
+            integraciones con diferentes productos y tecnologías, soporte de infraestructura 
+            local y en Azure. La innovación es uno de los pilares que destaca a nuestro 
+            equipo de alto desempeño y reflejo de ello son los casos de éxito.
             </span>
           </div>
-          <div className="custom-image-container">imagen</div>
+          <div className="custom-image-container_2"></div>
         </div>
         <div className="custom-card-container">
           {services.map(({ title, detail }) => staticsCard(title, detail))}

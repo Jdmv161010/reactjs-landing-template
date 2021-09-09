@@ -36,12 +36,26 @@
       justify-content: space-evenly;
     }
 
-    .custom-image-container {
-      background: white;
-      border-radius: 100%;
+    .custom-image-container_1 {
+      background-image: url("../../../assets/images/BackGrounds/Cali_City.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      // border-radius: 100%;
 
-      height: 250px;
-      width: 250px;
+      height: 350px;
+      width: 550px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .custom-image-container_2 {
+      background-image: url("../../../assets/images/BackGrounds/Tech_Transformation.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      // border-radius: 100%;
+
+      height: 350px;
+      width: 500px;
       display: flex;
       align-items: center;
       justify-content: center;
