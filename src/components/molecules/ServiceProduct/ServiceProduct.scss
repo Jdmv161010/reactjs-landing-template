@@ -6,7 +6,8 @@
   }
 
   .custom-card {
-    background: lighten($color: #0d0d0d, $amount: 30);
+    // background: lighten($color: #0d0d0d, $amount: 30);
+    background: rgb(22, 22, 22);
     width: 45%;
     max-width: 45%;
     height: auto;
@@ -18,7 +19,8 @@
   }
 
   .custom-card-img {
-    background: lighten($color: #0d0d0d, $amount: 30);
+    // background: lighten($color: #0d0d0d, $amount: 30);
+    background: rgb(22, 22, 22);
     height: 130px !important;
     width: 130px !important;
     margin-right: 20px;
