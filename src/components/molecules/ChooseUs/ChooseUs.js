@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BG_Principal from "../../../assets/images/BackGrounds/BG_Principal.mp4";
 import "./ChooseUs.scss";
 
 export const ChooseUs = () => {
