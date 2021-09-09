@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Button } from "../components/atoms/Button/Button";
 import { Navbar } from "../components/atoms/Navbar/Navbar";
+import { Contact } from "../components/molecules/Contact/Contact";
 import { Landing } from "../components/templates/Landing/Landing";
 
 export const AppRouter = () => {
@@ -34,6 +35,7 @@ export const AppRouter = () => {
           ))}
         </Switch>
       </div>
+      <Contact />
       <Button />
     </Router>
   );

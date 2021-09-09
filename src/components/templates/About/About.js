@@ -1,9 +1,106 @@
-import React from 'react'
+import React from "react";
+import Develop from "../../../assets/images/IconServicesProducts/desarrollador_ServiciosProductos.svg";
+import CRM from "../../../assets/images/IconServicesProducts/crm.svg";
+import infra from "../../../assets/images/IconServicesProducts/estructure.svg";
+import OwnProducts from "../../../assets/images/IconServicesProducts/ownProducts.svg";
+import "./About.scss";
 
 export const About = () => {
-    return (
-        <div>
-            About us
+  const services = [
+    {
+      title: "Microsoft Dynamics CRM en Colombia",
+      detail:
+        "Socio del Año de Microsoft Dynamics CRM en Colombia en 2009, 2011, 2012, 2013 y 2015",
+    },
+    {
+      title: "Microsoft Dynamics CRM en Latinoamérica y Caribe",
+      detail:
+        "Socio del Año de Microsoft Dynamics CRM en Latinoamérica y Caribe en 2008 y 2009",
+    },
+    {
+      title: "Microsoft en Seguridad en Sector Público y Seguridad Nacional",
+      detail:
+        "Socio del Año de Microsoft en Seguridad en Sector Público y Seguridad Nacional en Latinoamérica y Caribe en 2014 y 2016",
+    },
+    {
+      title: "Microsoft Consulting Services en Colombia",
+      detail:
+        "Socio de Servicios del Año en Microsoft en Colombia en 2014 y 2015",
+    },
+    {
+      title: "Microsoft Gold Partner",
+      detail: "Somos Gold Partner de Microsoft desde hace más de 10 años",
+    },
+  ];
+
+  const staticsCard = (title, detail) => (
+    <div className="custom-card">
+      <div className="custom-card-img"></div>
+      <div className="custom-card-content" style={{ flex: 1 }}>
+        <span style={{ fontWeight: 600, textAlign: "left" }}>{title}</span>
+        <span style={{ textAlign: "justify" }}>{detail}</span>
+      </div>
+    </div>
+  );
+
+  return (
+    <div id="About" className="custom-about-container">
+      <div
+        className="custom-content-section"
+        style={{ margin: "0 !important", height: "70vh" }}
+      >
+        <div className="custom-header-content">
+          <span className="custom-title-span">Acerca de nosotos</span>
         </div>
-    )
-}
+      </div>
+
+      <div id="AboutSection1" className="custom-content-section">
+        <div className="custom-row">
+          <div className="custom-image-container">imagen</div>
+          <div className="custom-content" style={{ flex: "0.7" }}>
+            <span
+              className="custom-title-span"
+              style={{ textAlign: "center", marginBottom: "10px" }}
+            >
+              Titulo
+            </span>
+            <span className="custom-subtitle-span">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </span>
+          </div>
+        </div>
+        <div className="custom-row">
+          <div className="custom-content" style={{ flex: "0.7" }}>
+            <span
+              className="custom-title-span"
+              style={{ textAlign: "center", marginBottom: "15px" }}
+            >
+              Titulo
+            </span>
+            <span className="custom-subtitle-span">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem.
+            </span>
+          </div>
+          <div className="custom-image-container">imagen</div>
+        </div>
+        <div className="custom-card-container">
+          {services.map(({ title, detail }) => staticsCard(title, detail))}
+        </div>
+      </div>
+    </div>
+  );
+};
