@@ -1,25 +1,48 @@
 import React from "react";
+import Develop from "../../../assets/images/IconServicesProducts/desarrollador_ServiciosProductos.svg";
+import CRM from "../../../assets/images/IconServicesProducts/crm.svg";
+import infra from "../../../assets/images/IconServicesProducts/estructure.svg";
+import OwnProducts from "../../../assets/images/IconServicesProducts/ownProducts.svg";
 import "./About.scss";
 
 export const About = () => {
-  const statics = [
-    { title: "Microsoft Dynamics CRM", detail: "Colombia" },
-    { title: "Microsoft Dynamics CRM", detail: "Latinoamérica y Caribe" },
-    { title: "Microsoft", detail: "Gold Partner" },
+  const services = [
     {
-      title: "Microsoft Seguridad",
-      detail: "Sector Público y Seguridad Nacional",
+      title: "Microsoft Dynamics CRM en Colombia",
+      detail:
+        "Socio del Año de Microsoft Dynamics CRM en Colombia en 2009, 2011, 2012, 2013 y 2015",
     },
-    { title: "Microsoft Consulting Services", detail: "Colombia" },
+    {
+      title: "Microsoft Dynamics CRM en Latinoamérica y Caribe",
+      detail:
+        "Socio del Año de Microsoft Dynamics CRM en Latinoamérica y Caribe en 2008 y 2009",
+    },
+    {
+      title: "Microsoft en Seguridad en Sector Público y Seguridad Nacional",
+      detail:
+        "Socio del Año de Microsoft en Seguridad en Sector Público y Seguridad Nacional en Latinoamérica y Caribe en 2014 y 2016",
+    },
+    {
+      title: "Microsoft Consulting Services en Colombia",
+      detail:
+        "Socio de Servicios del Año en Microsoft en Colombia en 2014 y 2015",
+    },
+    {
+      title: "Microsoft Gold Partner",
+      detail: "Somos Gold Partner de Microsoft desde hace más de 10 años",
+    },
   ];
 
   const staticsCard = (title, detail) => (
     <div className="custom-card">
       <div className="custom-card-img"></div>
-      <span className="custom-card-value">{title}</span>
-      <span>{detail}</span>
+      <div className="custom-card-content" style={{ flex: 1 }}>
+        <span style={{ fontWeight: 600, textAlign: "left" }}>{title}</span>
+        <span style={{ textAlign: "justify" }}>{detail}</span>
+      </div>
     </div>
   );
+
   return (
     <div id="About" className="custom-about-container">
       <div
@@ -75,7 +98,7 @@ export const About = () => {
           <div className="custom-image-container">imagen</div>
         </div>
         <div className="custom-card-container">
-          {statics.map(({ title, detail }) => staticsCard(title, detail))}
+          {services.map(({ title, detail }) => staticsCard(title, detail))}
         </div>
       </div>
     </div>

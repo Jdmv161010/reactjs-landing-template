@@ -75,13 +75,12 @@ export const Partners = () => {
       <span
         className="custom-title-span"
         style={{
-          width: "50%",
-          // background: "red",
-          textAlign: "left",
-          margin: "10px 70px",
+          width: "100%",
+          textAlign: "center",
+          marginTop: "30px",
         }}
       >
-        Partners
+        Clientes
       </span>
       <div className="custom-content-section">
         <div className="custom-image-container">
