@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   max-width: 100vw !important;
-  background: #0d0d0d;
+  background: rgb(15,12,13);
 }
 
-#About {
+#AboutLanding {
   .custom-content-section {
     background-image: linear-gradient(
         to right,
@@ -15,6 +15,7 @@
       url("../../../assets/images/BackGrounds/BG_AboutUs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
   }
 
   .custom-title-span {
@@ -22,36 +23,26 @@
   }
 
   #AboutSection1 {
-    background: #0d0d0d;
+    background: rgb(15,12,13);
     margin: 50px 0;
     height: auto;
 
-    .custom-row {
-      height: 100%;
-      width: 100%;
-      padding: 30px 70px !important;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
-    }
-
-    .custom-image-container_1 {
-      height: 500px;
-      width: 600px;
+    .custom-video-container {
+      height: auto;
+      width: auto;
       display: flex;
       align-items: center;
       justify-content: center;
 
-      .video{
-        border-radius: 15%;
+      .video {
+        border-radius: 5px;
       }
     }
-    .custom-image-container_2 {
+    .custom-image-container {
       background-image: url("../../../assets/images/BackGrounds/Tech_Transformation.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      border-radius: 10%;
+      border-radius: 5px;
 
       height: 350px;
       width: 450px;
@@ -68,15 +59,11 @@
     }
 
     .custom-card-container {
-      margin: 100px 0 50px 0;
-    }
-
-    .custom-card-container {
+      margin-top: 50px;
       flex-wrap: wrap;
     }
 
     .custom-card {
-      // background: lighten($color: #0d0d0d, $amount: 30);
       background: rgb(22, 22, 22);
       width: 40%;
       max-width: 40%;
@@ -86,6 +73,11 @@
       margin-bottom: 40px !important;
       border-radius: 5px;
       flex-direction: row;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.06, 1.06);
+      }
     }
 
     .custom-card-img {
@@ -95,7 +87,7 @@
       backdrop-filter: blur(5px) saturate(100%);
       -webkit-backdrop-filter: blur(5px) saturate(100%);
       background-color: rgba(17, 25, 40, 0.6);
-      border: 1px solid #05c7f2;
+      border: 1px solid rgb(0,175,239);
       background-image: url("../../../assets/images/Premio_AboutUs.svg");
       background-repeat: no-repeat;
       background-size: 80%;
@@ -104,6 +96,10 @@
 
     .custom-card-container {
       flex-wrap: wrap-reverse;
+    }
+
+    .custom-subtitle-span {
+      text-align: justify;
     }
   }
 }

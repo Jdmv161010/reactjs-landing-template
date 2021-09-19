@@ -1,12 +1,11 @@
 #ServiceProduct {
-  background: #0d0d0d;
+  background: rgb(15,12,13);
 
   .custom-card-container {
     flex-wrap: wrap;
   }
 
   .custom-card {
-    // background: lighten($color: #0d0d0d, $amount: 30);
     background: rgb(22, 22, 22);
     width: 45%;
     max-width: 45%;
@@ -18,8 +17,15 @@
     flex-direction: row;
   }
 
+  .custom-card {
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.06, 1.06);
+    }
+  }
+
   .custom-card-img {
-    // background: lighten($color: #0d0d0d, $amount: 30);
     background: rgb(22, 22, 22);
     height: 130px !important;
     width: 130px !important;
