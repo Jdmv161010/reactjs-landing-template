@@ -35,7 +35,7 @@ export const Home = () => {
           las interacciones y relaciones con sus clientes
         </span>
 
-        <button className="custom-partner-button">
+        <button className="custom-button-field">
           <a
             target="_blank"
             href="https://www.microsoft.com/en-us/solution-providers/partnerdetails/intelecto_bfcc0776-5e02-48ae-a562-ccdd5f4b9ea0/e7416b38-7167-4b51-9f15-ed8debf4c1bb"
@@ -44,6 +44,7 @@ export const Home = () => {
           </a>
         </button>
       </div>
+      <div className="custom-separator" />
       <div id="Section2">
         <AboutUs />
       </div>

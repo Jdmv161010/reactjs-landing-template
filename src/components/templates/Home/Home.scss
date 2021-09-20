@@ -9,29 +9,12 @@
     background-color: rgba(0, 0, 0, 0.3);
     background-repeat: no-repeat;
     background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
 
     video {
       position: fixed;
       height: auto;
       z-index: -100;
-    }
-
-    .custom-partner-button {
-      width: 250px;
-      height: 60px;
-      margin: 30px;
-      color: white;
-      background: #05c7f2;
-      box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
-      border: none;
-      border-radius: 5px;
-      font-weight: 600;
-      font-size: 20px;
     }
 
     a {
@@ -44,6 +27,6 @@
   #Section3,
   #Section4,
   #Section5 {
-    background: #0d0d0d;
+    background: rgb(15, 12, 13);
   }
 }

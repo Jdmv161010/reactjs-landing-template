@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../../assets/images/intelecto_blanco.png";
 import "./Navbar.scss";
 
 export const Navbar = ({ options }) => {
@@ -8,7 +9,8 @@ export const Navbar = ({ options }) => {
       <div className="custom-navbar-brand">
         <div>
           <Link to="/">
-            <div className='LOGO'>
+            <div className="custom-logo-container">
+              <img src={logo} alt="Intelecto S.A.S." />
             </div>
           </Link>
         </div>
