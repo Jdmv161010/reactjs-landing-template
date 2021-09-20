@@ -1,7 +1,8 @@
 import React from "react";
-import BingMapsReact from "bingmaps-react";
+import { ReactBingmaps } from 'react-bingmaps';
 import { makeStyles, MenuItem, TextField } from "@material-ui/core";
 import "./Contact.scss";
+import { red } from "@material-ui/core/colors";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -31,22 +32,24 @@ export const Contact = () => {
 
           <div className="auxcontact">
             <div className="custom-row">
-              <BingMapsReact
-                bingMapsKey="AmN3jZxAlbTHAQzmy5ondBHzpwgHTXmnbxCOEYPsJysWjexkownz6VJpu_NzQ0cR"
-                width="600px"
-                height="600px"
-                mapOptions={{
-                  navigationBarMode: "square",
-                }}
-                viewOptions={{
-                  center: {
-                    latitude: 3.4741799613928137,
-                    longitude: -76.52160245975595,
-                  },
-                  // mapTypeId: "grayscale",
-                }}
-              />
-
+              <ReactBingmaps 
+                bingmapKey = "AmN3jZxAlbTHAQzmy5ondBHzpwgHTXmnbxCOEYPsJysWjexkownz6VJpu_NzQ0cR" 
+                center = {[3.451166456952944, -76.53365181503032]}
+                mapTypeId = {"road"}
+                navigationBarMode = {"compact"}
+                supportedMapTypes = {["road","canvasDark"]}
+                heading = {180}
+                zoom = {16}
+                disableStreetside={true}
+                pushPins = {
+                  [
+                    {
+                      "location":[3.451166456952944, -76.53365181503032], "option":{ color: "rgb(0, 175, 239)", title: "INTELECTO SAS"}, "addHandler": {"type" : "click",}
+                    },
+                  ]
+                }
+                > 
+              </ReactBingmaps>
               <div className="custom-form-section">
                 <span
                   className="custom-title-span"
