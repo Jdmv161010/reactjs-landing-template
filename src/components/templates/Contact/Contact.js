@@ -26,8 +26,10 @@ export const Contact = () => {
 
         <div id="ContactSection1" className="custom-content-section">
           <span className="custom-subtitle-span" style={{ width: "60%" }}>
-            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit..."
+          <b>Brindar un gran servicio y producto es nuestro emblema. </b>
+          <br/> 
+          Si tienes, peticiones, quejas o sugerencias dèjanos tus datos y cuèntanos un poco màs. 
+          Con gusto trabajaremos en tus inquitudes o comentarios.
           </span>
 
           <div className="auxcontact">
@@ -122,13 +124,19 @@ export const Contact = () => {
                     }}
                   >
                     <MenuItem className="custom-dropdown-item">
-                      Opcion1
+                      Peticiòn o Cotizaciòn
                     </MenuItem>
                     <MenuItem className="custom-dropdown-item">
-                      Opcion2
+                      Queja
                     </MenuItem>
                     <MenuItem className="custom-dropdown-item">
-                      Opcion3
+                      Sugerencia
+                    </MenuItem>
+                    <MenuItem className="custom-dropdown-item">
+                      Felicitaciòn
+                    </MenuItem>
+                    <MenuItem className="custom-dropdown-item">
+                      Envìo Hoja de Vida
                     </MenuItem>
                   </TextField>
 
