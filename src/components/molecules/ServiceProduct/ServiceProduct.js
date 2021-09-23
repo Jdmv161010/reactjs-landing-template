@@ -46,7 +46,7 @@ export const ServiceProduct = () => {
       </div>
       <div className="custom-card-content" style={{ flex: 1 }}>
         <span style={{ fontWeight: 600 }}>{title}</span>
-        <span style={{ textAlign: "justify" }}>{detail}</span>
+        <span style={{ textAlign: "justify" }}>{detail} <Link to="/services-products">Ver más.</Link></span>
       </div>
     </div>
   );
@@ -56,8 +56,6 @@ export const ServiceProduct = () => {
       <div className="custom-header-content">
         <span className="custom-title-span">Servicios y productos</span>
         <span className="custom-subtitle-span">
-          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-          consectetur. <Link to="/services-products">Ver más</Link>
         </span>
       </div>
 
