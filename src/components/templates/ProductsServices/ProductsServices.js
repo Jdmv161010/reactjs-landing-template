@@ -12,33 +12,28 @@ import "./ProductsServices.scss";
 export const ProductsServices = () => {
   const services = [
     {
-      title: "Adsecurity",
       imagen: Adsecurity,
     },
     {
-      title: "Girapp",
       imagen: Girapp,
     },
     {
-      title: "Bot Inty",
       imagen: Bot,
     },
     {
-      title: "rMarketing",
       imagen: rMarketing,
     },
   ];
 
-  const staticsCard = (title, imagen) => (
+  const staticsCard = (imagen) => (
     <div className="custom-card">
       <div className="custom-card-img">
       <img
           src={imagen}
-          alt={title}
           style={{ width: "60%", height: "60%" }}
-        ></img>
+        >
+        </img>
       </div>
-      <span className="custom-card-value">{title}</span>
     </div>
   );
 
@@ -134,7 +129,7 @@ export const ProductsServices = () => {
         </span>
 
         <div className="custom-card-container">
-          {services.map(({ title, imagen}) => staticsCard(title, imagen))}
+          {services.map(({imagen}) => staticsCard(imagen))}
         </div>
       </div>
     </div>
