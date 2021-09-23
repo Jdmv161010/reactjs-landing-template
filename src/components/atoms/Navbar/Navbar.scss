@@ -3,6 +3,7 @@
 .custom-navbar {
   width: 100%;
   height: 90px;
+  padding: 0 50px;
 
   background-color: rgb(15, 12, 13);
   color: rgb(0, 175, 239);
@@ -41,9 +42,9 @@
 
 .custom-navbar-options {
   height: 100%;
-  width: 50%;
+  width: 45%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 
   & a {
