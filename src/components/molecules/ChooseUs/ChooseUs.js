@@ -49,13 +49,7 @@ export const ChooseUs = () => {
            TESTIMONIO:
            <br/>
            <br/>
-           <i>"El indicador de satisfacción del cliente se ha incrementado,
-           {/* <br/>  */}
-             debido a que disponen de la herramienta todo el día. 
-           {/* <br/> */}
-             Adicional, es una herramienta muy sencilla de utilizar. 
-           {/* <br/> */}
-             La implementacion fue rápida y sencilla."
+           <i>"El indicador de satisfacción del cliente se ha incrementado, debido a que disponen de la herramienta todo el día. Adicional, es una herramienta muy sencilla de utilizar. La implementacion fue rápida y sencilla."
            </i>
            <br/>
            <br/>
