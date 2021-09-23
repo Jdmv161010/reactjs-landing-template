@@ -12,25 +12,25 @@ export const ServiceProduct = () => {
     {
       title: "DESARROLLO",
       detail:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,consectetur",
+        "Contar con un aliado y experto en desarrollo a la medida es vital para las organizaciones. Saca el máximo provecho de tus aplicaciones y herramientas empresariales. Incluso, crea las propias cuando ninguna cumpla con los requerimientos de tu empresa.",
       imagen: Develop,
     },
     {
       title: "CRM",
       detail:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,consectetur",
+        "Obtenga una vista 360° de sus clientes. Gestione la información y procesos con sus clientes aprovechando integraciones con los aplicativos que ya maneja su empresa.",
       imagen: CRM,
     },
     {
       title: "INFRAESTRUCTURA",
       detail:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,consectetur",
+        "Permite que tu empresa vaya a la vanguardia y haz de la transformación tecnológica una aliada. La infraestructura es la columna vertebral de las compañías, ya sea híbrida o en la nube. Consulta la mejor opción para tu empresa.",
       imagen: infra,
     },
     {
       title: "PRODUCTOS PROPIOS",
       detail:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,consectetur",
+        "Potencializa los procesos empresariales, con Chatbots, autogestión de contraseñas y muchas otras herramientas que tenemos para tu compañía.",
       imagen: OwnProducts,
     },
   ];
