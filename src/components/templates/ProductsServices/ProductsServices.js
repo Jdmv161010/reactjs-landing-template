@@ -82,10 +82,10 @@ export const ProductsServices = () => {
             <span className="custom-title-span">Desarrollo</span>
             <br />
             <span className="custom-subtitle-span">
-              Aprovechamos nuestro conocimiento y experiencias para mejorar los
+              Aprovechamos nuestro conocimiento y experiencias en distintas áreas para mejorar los
               procesos, crear nuevos recursos o sistemas que permitan un
               constante avance a su empresa. La innovación es parte fundamental
-              de nuestros pilares ybuscamos entregar los mejores resultados con
+              de nuestros pilares y buscamos entregar los mejores resultados con
               excelente calidad.
             </span>
           </div>
@@ -105,7 +105,7 @@ export const ProductsServices = () => {
             <span className="custom-subtitle-span">
               Brindamos consultoría, implementación y soporte en infraestructura
               Microsoft tanto local, híbrida o en Azure. Descubre las bondades
-              que tiene la nube en Microsoft y lo que te permite ahorrar en
+              que tiene la nube de Microsoft y lo que te permite ahorrar en
               costos de equipos. Convierte a las plataformas en aliadas y saca
               el máximo provecho.
             </span>
@@ -124,6 +124,8 @@ export const ProductsServices = () => {
           >
             Contamos con varias soluciones que le ayudarán a brindarle mayor
             productividad y cumplimiento a sus procesos.
+            <br/>
+            <b>¡Da click en alguno de nuestros productos para conocer más!</b>
           </span>
         </div>
 
