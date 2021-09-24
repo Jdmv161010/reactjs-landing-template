@@ -29,13 +29,13 @@ export const ProductsServices = () => {
   ];
 
   const staticsCard = (imagen, href) => (
-    <div className="custom-card">
-      <div className="custom-card-img">
-        <a href={href} target="_blank">
+    <a href={href} target="_blank">
+      <div className="custom-card">
+        <div className="custom-card-img">
           <img src={imagen} style={{ width: "95%" }} />
-        </a>
+        </div>
       </div>
-    </div>
+    </a>
   );
 
   return (
