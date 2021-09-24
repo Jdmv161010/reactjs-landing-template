@@ -27,10 +27,10 @@
     margin: 50px 0;
     height: auto;
 
-    // .custom-row {
-    //   background: green;
-    //   border: 1px solid yellow;
-    // }
+    .custom-row {
+      padding: 0;
+      margin: 30px;
+    }
 
     .custom-video-container {
       height: auto;
@@ -44,10 +44,8 @@
       }
     }
     .custom-image-container {
-      // background-image: url("../../../assets/images/Services&Productos_Images/CRM_Intelecto_Imagen.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      border-radius: 5px;
 
       height: 350px;
       width: 450px;
@@ -56,11 +54,22 @@
       justify-content: center;
     }
 
+    .CRM {
+      background-image: url("../../../assets/images/Services&Productos_Images/CRM_Intelecto_Imagen.jpg") !important;
+    }
+    .DESARROLLO {
+      background-image: url("../../../assets/images/Services&Productos_Images/Imagen_Desarrollo_Intelecto.jpg") !important;
+    }
+    .INFRAESTRUCTURA {
+      background-image: url("../../../assets/images/Services&Productos_Images/Infraestructura_Imagen_Intelecto.jpg") !important;
+    }
+
     .custom-content {
+      height: inherit;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
 
       .custom-subtitle-span {
         width: 90%;
@@ -74,6 +83,7 @@
 
     .custom-card {
       flex: 1;
+      cursor: pointer;
 
       &:hover {
         transform: scale(1.06, 1.06);
@@ -81,27 +91,22 @@
     }
 
     .custom-card-img {
-      height: 110px !important;
-      width: 180px !important;
-      margin-right: 20px;
-      // backdrop-filter: blur(5px) saturate(100%);
-      // -webkit-backdrop-filter: blur(5px) saturate(100%);
-      // background-color: rgba(17, 25, 40, 0.6);
-      border: 5px solid rgb(0, 175, 239);
+      height: 150px !important;
+      width: 150px !important;
+      backdrop-filter: blur(5px) saturate(100%);
+      -webkit-backdrop-filter: blur(5px) saturate(100%);
+      background-color: rgba(0, 175, 239, 0.4);
+      border: 3px solid rgb(0, 175, 239);
       background-repeat: no-repeat;
       background-size: 80%;
       background-position: center;
-    }
-
-    .custom-card-container {
-      flex-wrap: wrap-reverse;
     }
 
     .custom-title-span {
       width: 90%;
       text-align: center;
     }
-    
+
     .custom-subtitle-span {
       text-align: justify;
     }

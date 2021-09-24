@@ -100,11 +100,11 @@ span {
 .custom-row {
   height: 100%;
   width: 100%;
-  // padding: 0 70px !important;
+  padding: 0 100px !important;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .custom-button-field {

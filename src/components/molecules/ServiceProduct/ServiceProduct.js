@@ -55,8 +55,6 @@ export const ServiceProduct = () => {
     <div id="ServiceProduct" className="custom-content-section">
       <div className="custom-header-content">
         <span className="custom-title-span">Servicios y productos</span>
-        <span className="custom-subtitle-span">
-        </span>
       </div>
 
       <div className="custom-card-container">

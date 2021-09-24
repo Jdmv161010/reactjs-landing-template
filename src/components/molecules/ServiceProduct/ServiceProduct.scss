@@ -1,5 +1,9 @@
 #ServiceProduct {
-  background: rgb(15,12,13);
+  background: rgb(15, 12, 13);
+
+  .custom-title-span {
+    margin: 0;
+  }
 
   .custom-card-container {
     flex-wrap: wrap;

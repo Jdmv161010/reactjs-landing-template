@@ -69,7 +69,7 @@ export const About = () => {
               <source src={Cali} type="video/mp4" />
             </video>
           </div>
-          <div className="custom-content" style={{ flex: "0.7" }}>
+          <div className="custom-content" style={{ flex: "0.9" }}>
             <span className="custom-subtitle-span">
               Intelecto Soluciones y Tecnología S.A.S. fue creada en abril de
               2002, en la ciudad de Cali.
@@ -83,7 +83,7 @@ export const About = () => {
           </div>
         </div>
         <div className="custom-row">
-          <div className="custom-content" style={{ flex: "0.7" }}>
+          <div className="custom-content" style={{ flex: "0.9" }}>
             <span className="custom-subtitle-span">
               El auge de la transformación tecnológica le abre las puertas en
               importantes empresas, consiguiendo así altos estándares y
