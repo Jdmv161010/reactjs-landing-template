@@ -1,0 +1,11 @@
+{
+  "Navbar": {
+    "item1": ["Acerca de nosotros", "About us"],
+    "item2": ["Servicios y productos", "Services and products"],
+    "item3": ["Contáctenos", "Contact us"]
+  },
+  "Home": {},
+  "AboutUS": {},
+  "ServicesProducts": {},
+  "ContactUs": {}
+}

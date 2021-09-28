@@ -57,9 +57,6 @@ export const Partners = () => {
     setCarousel(logos.slice(partners[0], partners[1]));
   };
 
-  console.log("Partners", partners);
-  console.log("Carousel", carousel);
-
   const logo = (image, alt) => (
     <div className="custom-image-content">
       <img src={image} alt={alt} />
