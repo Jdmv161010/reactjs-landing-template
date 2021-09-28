@@ -42,7 +42,7 @@
 
 .custom-navbar-options {
   height: 100%;
-  width: 45%;
+  width: 55%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,4 +56,16 @@
       text-decoration: none;
     }
   }
+}
+
+.custom-change-lenguage-button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: none;
+  font-weight: 600;
+  font-size: 15px;
+  background: rgb(0, 175, 239);
+  color: rgb(15, 12, 13);
+  width: auto;
 }
