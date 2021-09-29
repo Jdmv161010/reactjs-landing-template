@@ -6,17 +6,15 @@ import Clientes from "../../../assets/images/IconChooseUs/Clientes.svg";
 import Implementacion from "../../../assets/images/IconChooseUs/Implementacion.svg";
 import Experiencia from "../../../assets/images/IconChooseUs/Experiencia.svg";
 import "./ChooseUs.scss";
+import { useSelector } from "react-redux";
 
 export const ChooseUs = () => {
+  const { PaginaHome } = useSelector((state) => state.lenguage);
   const statics = [
-    { title: "+ 120", detail: "Clientes", imagen: Clientes },
-    { title: "+ 50.000", detail: "Usuarios", imagen: Usuarios },
-    { title: "+ 250", detail: "Implementaciones", imagen: Implementacion },
-    {
-      title: "+ 19",
-      detail: "Años de Experiencia",
-      imagen: Experiencia,
-    },
+    { title: "+ 120", detail: PaginaHome.estadistica1, imagen: Clientes },
+    { title: "+ 50.000", detail: PaginaHome.estadistica2, imagen: Usuarios },
+    { title: "+ 250", detail: PaginaHome.estadistica3, imagen: Implementacion },
+    { title: "+ 19", detail: PaginaHome.estadistica4, imagen: Experiencia },
   ];
 
   const staticsCard = (title, detail, imagen) => (
@@ -40,17 +38,12 @@ export const ChooseUs = () => {
       <div style={{ flex: 1.1 }}></div>
       <div className="custom-content-section" style={{ flex: 1.9 }}>
         <div className="custom-header-content">
-          <span className="custom-title-span">¿Por qué escogernos?</span>
+          <span className="custom-title-span">{PaginaHome.chooseUs}</span>
           <span
             className="custom-subtitle-span span-flex"
             style={{ width: "100%", textAlign: "justify" }}
           >
-            <cite style={{ fontSize: "19px" }}>
-              "El indicador de satisfacción del cliente se ha incrementado,
-              debido a que disponen de la herramienta todo el día. Adicional, es
-              una herramienta muy sencilla de utilizar. La implementacion fue
-              rápida y sencilla."
-            </cite>
+            <cite style={{ fontSize: "19px" }}>{PaginaHome.testimonio}</cite>
             <span style={{ fontSize: "18px" }}>
               <b style={{ fontSize: "18px" }}>Claudia Fernanda Taborda H.</b>
               <br />

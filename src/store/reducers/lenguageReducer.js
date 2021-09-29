@@ -53,10 +53,10 @@ const initialState = [
       detalle1:
         "Gestione la relación con sus clientes a través de Microsoft Dynamics 365. Obtenga todo lo que necesita en una sola herramienta. Controle los procesos de ventas, servicio al cliente, marketing, recursos humanos, entre otros. •	Ventas •	Servicio al cliente •	Marketing •	Recursos Humanos",
       servicio2: "Desarrollo",
-      detalle1:
+      detalle2:
         "Aprovechamos nuestro conocimiento y experiencias para mejorar los procesos, crear nuevos recursos o sistemas que permitan un constante avance a su empresa.  La innovación es parte fundamental de nuestros pilares y buscamos entregar los mejores resultados con excelente calidad.",
       servicio3: "Infraestructura",
-      detalle1:
+      detalle3:
         "Brindamos consultoría, implementación y soporte en infraestructura Microsoft tanto local, híbrida o en Azure. Descubre las bondades que tiene la nube de Microsoft y lo que te permite ahorrar en costos de equipos. Convierte a las plataformas en aliadas y saca el máximo provecho.",
       productos: "Productos Propios",
       detalleProductos:
@@ -66,6 +66,7 @@ const initialState = [
       home: "Aplicaciones empresariales que transforman su negocio",
       detalleHome:
         "Simplificación y conexión de procesos empresariales y mejoramiento de las interacciones y relaciones con sus clientes",
+      buttonMicrosoft: "Socio Microsoft",
       aboutUs: "Acerca de Nosotros",
       detalleAboutUs:
         "Empresa vallecaucana con más de 19 años de experiencia en apoyo tecnológico en el sector público y privado, especializados en el área de Proyectos de CRM, Desarrollo a la medida, Infraestructura y Azure. Atendiendo al cliente con altos estándares de calidad, servicio y sentido de pertenencia.",
@@ -105,7 +106,7 @@ const initialState = [
     About: {
       titulo: "About Us",
       item1:
-        "Intelecto Soluciones y Tecnología S.A.S. was created in April 2002, in the city of Cali – Colombia and quickly obtained participation in technology projects of large companies in the region from different sectors, helping them to improve their business processes.",
+        "Intelecto Soluciones and Tecnología S.A.S. was created in April 2002, in the city of Cali – Colombia and quickly obtained participation in technology projects of large companies in the region from different sectors, helping them to improve their business processes.",
       item2:
         "The rise of digital transformation has speed up the growth of many tech companies that help their customers to improve their processes through the implementation of TI solutions. Intelecto is a Microsoft Gold Partner, that has stood out throughout its career in specialized consulting services in Microsoft Dynamics 365, integrations with different products and technologies, local infrastructure support and Microsoft Azure cloud services. 19 years of experience, more than 20 companies and thousands of happy users are the reflection of working with passion and having a high-performance team that works alongside our clients.",
       tituloPremio1: "Microsoft Gold Partner",
@@ -115,12 +116,12 @@ const initialState = [
         "Microsoft in Public Sector Security and National Security.",
       detallePremio2:
         "Microsoft Partner of the Year in Public Sector Security and National Security in Latin America and the Caribbean in 2014 and 2016.",
-      tituloPremio3: "Microsoft Consulting Services ein Colombia.",
+      tituloPremio3: "Microsoft Consulting Services in Colombia.",
       detallePremio3:
         "Partner of the Year at Microsoft in Colombia in 2014 and 2015.",
       tituloPremio4: "Microsoft Dynamics CRM in Colombia.",
       detallePremio4:
-        "Microsoft Dynamics CRM Partner of the Year in Colombia in 2009,2011,2012,2013 and 2015.",
+        "Microsoft Dynamics CRM Partner of the Year in Colombia in 2009, 2011, 2012, 2013 and 2015.",
       tituloPremio5:
         "Microsoft Dynamics CRM in Latin america and the Caribbean.",
       detallePremio5:
@@ -149,10 +150,10 @@ const initialState = [
       detalle1:
         "Manage the relationship with your customers through Microsoft Dynamics 365. Get everything you need in a single tool. Control sales processes, customer service, marketing, human resources, and others. •	Sales •	Customer service • Marketing •	Human Resources",
       servicio2: "Development",
-      detalle1:
+      detalle2:
         "We use our experience and knowledge in different areas to improve processes, create new resources or systems that allow constant progress for your company. Innovation is a fundamental part of our DNA, and we seek to deliver the best results with excellent quality.",
       servicio3: "Infrastructure",
-      detalle1:
+      detalle3:
         "We provide consulting, implementation, and support in Microsoft infrastructure both local, hybrid or in Azure. Discover the benefits of the Microsoft cloud that allows you to save on equipment costs. Turn platforms into allies and get the most out of it.",
       productos: "Our Solutions",
       detalleProductos:
@@ -162,6 +163,7 @@ const initialState = [
       home: "Development of corporate software that transforms your business",
       detalleHome:
         "We simplify and connect your business processes and help you to improve the relationship and the way you interact with your customers",
+      buttonMicrosoft: "Microsoft Partner",
       aboutUs: "About Us",
       detalleAboutUs:
         "Colombian company with more than 19 years of experience providing technological support in the public and private sector, specialized CRM Projects, Custom Development, Infrastructure and Azure. Serving the client with high standards of quality, service, and a sense of belonging.",

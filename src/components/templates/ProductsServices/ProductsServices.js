@@ -7,6 +7,7 @@ import BotPDF from "../../../assets/images/Services&Productos_Images/PdfProducto
 import rMarketing from "../../../assets/images/Services&Productos_Images/rMarketing.png";
 import rMarketingPDF from "../../../assets/images/Services&Productos_Images/PdfProductos/rMarketing.pdf";
 import "./ProductsServices.scss";
+import { useSelector } from "react-redux";
 
 export const ProductsServices = () => {
   const services = [
@@ -28,6 +29,8 @@ export const ProductsServices = () => {
     },
   ];
 
+  const { ProductsServices } = useSelector((state) => state.lenguage);
+
   const staticsCard = (imagen, href) => (
     <a href={href} target="_blank">
       <div className="custom-card">
@@ -48,7 +51,7 @@ export const ProductsServices = () => {
         style={{ margin: "0 !important", height: "70vh" }}
       >
         <div className="custom-header-content">
-          <span className="custom-title-span">Servicios y productos</span>
+          <span className="custom-title-span">{ProductsServices.titulo}</span>
         </div>
       </div>
 
@@ -59,34 +62,23 @@ export const ProductsServices = () => {
             style={{ flex: "1" }}
           ></div>
           <div className="custom-content" style={{ flex: "1" }}>
-            <span className="custom-title-span">CRM</span>
+            <span className="custom-title-span">
+              {ProductsServices.servicio1}
+            </span>
             <br />
             <span className="custom-subtitle-span">
-              Gestione la relaciòn con sus clientes a travès de Microsoft
-              Dynamics 365. Obtenga todo lo que necesita en una sola
-              herramienta. Controle los procesos de ventas, servicio al cliente,
-              marketing, recursos humanos, entre otros.
-              <br />
-              <br />
-              <ul style={{ margin: "0 20px" }}>
-                <li>Ventas</li>
-                <li>Servicio al cliente</li>
-                <li>Marketing</li>
-                <li>Recursos Humanos</li>
-              </ul>
+              {ProductsServices.detalle1}
             </span>
           </div>
         </div>
         <div className="custom-row">
           <div className="custom-content" style={{ flex: "1" }}>
-            <span className="custom-title-span">Desarrollo</span>
+            <span className="custom-title-span">
+              {ProductsServices.servicio2}
+            </span>
             <br />
             <span className="custom-subtitle-span">
-              Aprovechamos nuestro conocimiento y experiencias en distintas áreas para mejorar los
-              procesos, crear nuevos recursos o sistemas que permitan un
-              constante avance a su empresa. La innovación es parte fundamental
-              de nuestros pilares y buscamos entregar los mejores resultados con
-              excelente calidad.
+              {ProductsServices.detalle2}
             </span>
           </div>
           <div
@@ -100,14 +92,12 @@ export const ProductsServices = () => {
             style={{ flex: "1" }}
           ></div>
           <div className="custom-content" style={{ flex: "1" }}>
-            <span className="custom-title-span">Infraestructura</span>
+            <span className="custom-title-span">
+              {ProductsServices.servicio3}
+            </span>
             <br />
             <span className="custom-subtitle-span">
-              Brindamos consultoría, implementación y soporte en infraestructura
-              Microsoft tanto local, híbrida o en Azure. Descubre las bondades
-              que tiene la nube de Microsoft y lo que te permite ahorrar en
-              costos de equipos. Convierte a las plataformas en aliadas y saca
-              el máximo provecho.
+              {ProductsServices.detalle3}
             </span>
           </div>
         </div>
@@ -116,16 +106,13 @@ export const ProductsServices = () => {
             className="custom-title-span"
             style={{ marginTop: "80px", textAlign: "center" }}
           >
-            Productos propios
+            {ProductsServices.productos}
           </span>
           <span
             className="custom-subtitle-span"
             style={{ textAlign: "center" }}
           >
-            Contamos con varias soluciones que le ayudarán a brindarle mayor
-            productividad y cumplimiento a sus procesos.
-            <br/>
-            <b>¡Da click en alguno de nuestros productos para conocer más!</b>
+            {ProductsServices.detalleProductos}
           </span>
         </div>
 

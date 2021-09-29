@@ -1,8 +1,8 @@
 import React from "react";
-import { ReactBingmaps } from 'react-bingmaps';
+import { ReactBingmaps } from "react-bingmaps";
 import { makeStyles, MenuItem, TextField } from "@material-ui/core";
 import "./Contact.scss";
-import { red } from "@material-ui/core/colors";
+import { useSelector } from "react-redux";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -13,6 +13,7 @@ const useStyles = makeStyles(() => ({
 
 export const Contact = () => {
   const classes = useStyles();
+  const { Contact } = useSelector((state) => state.lenguage);
 
   return (
     <div id="ContactLanding" className="custom-contact-container">
@@ -21,48 +22,47 @@ export const Contact = () => {
         style={{ margin: "0 !important", height: "auto" }}
       >
         <div className="custom-header-content">
-          <span className="custom-title-span">Contáctenos</span>
+          <span className="custom-title-span">{Contact.titulo}</span>
         </div>
 
         <div id="ContactSection1" className="custom-content-section">
           <span className="custom-subtitle-span" style={{ width: "60%" }}>
-          <b>Brindar un gran servicio y producto es nuestro emblema. </b>
-          <br/> 
-          Si tienes, peticiones, quejas o sugerencias dèjanos tus datos y cuèntanos un poco màs. 
-          Con gusto trabajaremos en tus inquitudes o comentarios.
+            {Contact.item1}
           </span>
 
           <div className="auxcontact">
             <div className="custom-row">
-              <ReactBingmaps 
-                bingmapKey = "AmN3jZxAlbTHAQzmy5ondBHzpwgHTXmnbxCOEYPsJysWjexkownz6VJpu_NzQ0cR" 
-                center = {[3.451166456952944, -76.53365181503032]}
-                mapTypeId = {"road"}
-                navigationBarMode = {"compact"}
-                supportedMapTypes = {["road","canvasDark"]}
-                heading = {180}
-                zoom = {16}
+              <ReactBingmaps
+                bingmapKey="AmN3jZxAlbTHAQzmy5ondBHzpwgHTXmnbxCOEYPsJysWjexkownz6VJpu_NzQ0cR"
+                center={[3.451166456952944, -76.53365181503032]}
+                mapTypeId={"road"}
+                navigationBarMode={"compact"}
+                supportedMapTypes={["road", "canvasDark"]}
+                heading={180}
+                zoom={16}
                 disableStreetside={true}
-                pushPins = {
-                  [
-                    {
-                      "location":[3.451166456952944, -76.53365181503032], "option":{ color: "rgb(0, 175, 239)", title: "INTELECTO SAS"}, "addHandler": {"type" : "click",}
+                pushPins={[
+                  {
+                    location: [3.451166456952944, -76.53365181503032],
+                    option: {
+                      color: "rgb(0, 175, 239)",
+                      title: "INTELECTO SAS",
                     },
-                  ]
-                }
-                > 
-              </ReactBingmaps>
+                    addHandler: { type: "click" },
+                  },
+                ]}
+              ></ReactBingmaps>
               <div className="custom-form-section">
                 <span
                   className="custom-title-span"
                   style={{ fontSize: "25px" }}
                 >
-                  Comunícate con nosotros
+                  {Contact.tituloForm}
                 </span>
                 <div className="custom-form">
                   <TextField
                     style={{ width: "100%", marginBottom: "15px" }}
-                    label="Nombre"
+                    label={Contact.form1}
                     variant="filled"
                     InputProps={{
                       classes: { ...classes },
@@ -76,7 +76,7 @@ export const Contact = () => {
 
                   <TextField
                     style={{ width: "100%", marginBottom: "15px" }}
-                    label="Número Telefónico"
+                    label={Contact.form2}
                     variant="filled"
                     InputProps={{
                       classes: { ...classes },
@@ -89,7 +89,7 @@ export const Contact = () => {
                   />
                   <TextField
                     style={{ width: "100%", marginBottom: "15px" }}
-                    label="Email"
+                    label={Contact.form3}
                     variant="filled"
                     InputProps={{
                       classes: { ...classes },
@@ -103,7 +103,7 @@ export const Contact = () => {
                   <TextField
                     select
                     style={{ width: "100%", marginBottom: "15px" }}
-                    label="Asunto"
+                    label={Contact.form4}
                     variant="filled"
                     InputProps={{
                       classes: { ...classes },
@@ -124,19 +124,19 @@ export const Contact = () => {
                     }}
                   >
                     <MenuItem className="custom-dropdown-item">
-                      Peticiòn o Cotizaciòn
+                      {Contact.asunto1}
                     </MenuItem>
                     <MenuItem className="custom-dropdown-item">
-                      Queja
+                      {Contact.asunto2}
                     </MenuItem>
                     <MenuItem className="custom-dropdown-item">
-                      Sugerencia
+                      {Contact.asunto3}
                     </MenuItem>
                     <MenuItem className="custom-dropdown-item">
-                      Felicitaciòn
+                      {Contact.asunto4}
                     </MenuItem>
                     <MenuItem className="custom-dropdown-item">
-                      Envìo Hoja de Vida
+                      {Contact.asunto5}
                     </MenuItem>
                   </TextField>
 
@@ -144,7 +144,7 @@ export const Contact = () => {
                     style={{ width: "100%" }}
                     multiline
                     rows={6}
-                    label="Mensaje"
+                    label={Contact.form5}
                     variant="filled"
                     InputProps={{
                       classes: { ...classes },
@@ -156,7 +156,7 @@ export const Contact = () => {
                     }}
                   />
                 </div>
-                <button className="custom-button-field">Enviar</button>
+                <button className="custom-button-field">{Contact.boton}</button>
               </div>
             </div>
           </div>

@@ -5,8 +5,11 @@ import { Partners } from "../../molecules/Partners/Partners";
 import { ServiceProduct } from "../../molecules/ServiceProduct/ServiceProduct";
 import BG_Principal from "../../../assets/images/BackGrounds/BG_Principal.mp4";
 import "./Home.scss";
+import { useSelector } from "react-redux";
 
 export const Home = () => {
+  const { PaginaHome } = useSelector((state) => state.lenguage);
+
   return (
     <div id="Home" className="custom-home-container">
       <div
@@ -17,22 +20,21 @@ export const Home = () => {
         <video
           className="video"
           preload="auto"
-          autoplay="true"
+          autoPlay={true}
           loop="loop"
-          aria-hidden="true"
-          playsinline="true"
+          aria-hidden={true}
+          playsInline={true}
           muted
           volume="0"
         >
           <source src={BG_Principal} type="video/mp4" />
         </video>
         <span className="custom-title-span" style={{ width: "100%" }}>
-          Aplicaciones empresariales que transforman su negocio
+          {PaginaHome.home}
         </span>
 
         <span className="custom-subtitle-span" style={{ width: "50%" }}>
-          Simplificación y conexión de procesos empresariales y mejoramiento de
-          las interacciones y relaciones con sus clientes
+          {PaginaHome.detalleHome}
         </span>
 
         <button className="custom-button-field">
@@ -40,7 +42,7 @@ export const Home = () => {
             target="_blank"
             href="https://www.microsoft.com/en-us/solution-providers/partnerdetails/intelecto_bfcc0776-5e02-48ae-a562-ccdd5f4b9ea0/e7416b38-7167-4b51-9f15-ed8debf4c1bb"
           >
-            Socio Microsoft
+            {PaginaHome.buttonMicrosoft}
           </a>
         </button>
       </div>

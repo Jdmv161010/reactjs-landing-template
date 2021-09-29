@@ -19,9 +19,11 @@ import siesa from "../../../assets/images/IconPartners/siesa.png";
 import tecnoquimicas from "../../../assets/images/IconPartners/tecnoquimicas.png";
 import vision from "../../../assets/images/IconPartners/vision.png";
 import "./Partners.scss";
+import { useSelector } from "react-redux";
 var partners = [0, 5];
 
 export const Partners = () => {
+  const { PaginaHome } = useSelector((state) => state.lenguage);
   const logos = [
     { id: 1, image: microsoft, alt: "microsoft" },
     { id: 2, image: aguila_roja, alt: "aguila_roja" },
@@ -77,7 +79,7 @@ export const Partners = () => {
           marginTop: "30px",
         }}
       >
-        Clientes
+        {PaginaHome.clientes}
       </span>
       <div className="custom-content-section">
         <div className="custom-image-container">

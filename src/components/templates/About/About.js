@@ -1,32 +1,31 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Cali from "../../../assets/images/BackGrounds/Cali_City.mp4";
 import "./About.scss";
 
 export const About = () => {
+  const { About } = useSelector((state) => state.lenguage);
+
   const services = [
     {
-      title: "Microsoft Dynamics CRM en Colombia.",
-      detail:
-        "Socio del Año de Microsoft Dynamics CRM en Colombia en 2009, 2011, 2012, 2013 y 2015.",
+      title: About.tituloPremio1,
+      detail: About.detallePremio1,
     },
     {
-      title: "Microsoft Dynamics CRM en Latinoamérica y Caribe.",
-      detail:
-        "Socio del Año de Microsoft Dynamics CRM en Latinoamérica y Caribe en 2008 y 2009.",
+      title: About.tituloPremio2,
+      detail: About.detallePremio2,
     },
     {
-      title: "Microsoft en Seguridad en Sector Público y Seguridad Nacional.",
-      detail:
-        "Socio del Año de Microsoft en Seguridad en Sector Público y Seguridad Nacional en Latinoamérica y Caribe en 2014 y 2016.",
+      title: About.tituloPremio3,
+      detail: About.detallePremio3,
     },
     {
-      title: "Microsoft Consulting Services en Colombia.",
-      detail:
-        "Socio de Servicios del Año en Microsoft en Colombia en 2014 y 2015.",
+      title: About.tituloPremio4,
+      detail: About.detallePremio4,
     },
     {
-      title: "Microsoft Gold Partner.",
-      detail: "Somos Gold Partner de Microsoft desde hace más de 10 años.",
+      title: About.tituloPremio5,
+      detail: About.detallePremio5,
     },
   ];
 
@@ -47,7 +46,7 @@ export const About = () => {
         style={{ margin: "0 !important", height: "70vh" }}
       >
         <div className="custom-header-content">
-          <span className="custom-title-span">Acerca de nosotos</span>
+          <span className="custom-title-span">{About.titulo}</span>
         </div>
       </div>
 
@@ -57,10 +56,10 @@ export const About = () => {
             <video
               className="video"
               preload="auto"
-              autoplay="true"
+              autoPlay={true}
               loop="loop"
-              aria-hidden="true"
-              playsinline="true"
+              aria-hidden={true}
+              playsInline={true}
               muted
               volume="0"
               width="600"
@@ -70,33 +69,12 @@ export const About = () => {
             </video>
           </div>
           <div className="custom-content" style={{ flex: "0.9" }}>
-            <span className="custom-subtitle-span">
-              Intelecto Soluciones y Tecnología S.A.S. fue creada en abril de
-              2002, en la ciudad de Cali.
-              <br />
-              <br />
-              Rápidamente obtuvo participación en proyectos tecnológicos de
-              grandes empresas en la región de distintos sectores, ayudándolas a
-              mejorar sus procesos empresariales. De igual manera se destacó y
-              logró entrar a competir en proyectos a nivel nacional.
-            </span>
+            <span className="custom-subtitle-span">{About.item1}</span>
           </div>
         </div>
         <div className="custom-row">
           <div className="custom-content" style={{ flex: "0.9" }}>
-            <span className="custom-subtitle-span">
-              El auge de la transformación tecnológica le abre las puertas en
-              importantes empresas, consiguiendo así altos estándares y
-              reconocimientos a nivel latinoamericano.
-              <br />
-              <br />
-              Intelecto es Socio Gold de Microsoft, destacándose a lo largo de
-              su trayectoria en servicios especializados de consultoría en
-              Microsoft Dynamics 365, integraciones con diferentes productos y
-              tecnologías, soporte de infraestructura local y en Azure. La
-              innovación es uno de los pilares que destaca a nuestro equipo de
-              alto desempeño y reflejo de ello son los casos de éxito.
-            </span>
+            <span className="custom-subtitle-span">{About.item2}</span>
           </div>
           <div className="custom-image-container"></div>
         </div>
