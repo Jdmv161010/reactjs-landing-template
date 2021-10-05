@@ -9,7 +9,7 @@ import "animate.css";
 import { useSelector } from "react-redux";
 
 export const ServiceProduct = () => {
-  const { PaginaHome } = useSelector((state) => state.lenguage);
+  const { PaginaHome, Others } = useSelector((state) => state.lenguage);
   const services = [
     {
       title: PaginaHome.servicio1,
@@ -45,7 +45,7 @@ export const ServiceProduct = () => {
       <div className="custom-card-content" style={{ flex: 1 }}>
         <span style={{ fontWeight: 600 }}>{title}</span>
         <span style={{ textAlign: "justify" }}>
-          {detail} <Link to="/services-products">Ver más.</Link>
+          {detail} <Link to="/services-products">{Others.VerMas}.</Link>
         </span>
       </div>
     </div>

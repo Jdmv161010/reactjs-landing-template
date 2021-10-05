@@ -52,6 +52,7 @@ export const Contact = () => {
                   },
                 ]}
               ></ReactBingmaps>
+
               <div className="custom-form-section">
                 <span
                   className="custom-title-span"

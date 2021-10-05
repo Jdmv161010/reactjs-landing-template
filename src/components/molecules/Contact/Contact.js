@@ -18,16 +18,13 @@ export const Contact = () => {
                 href="https://img1.wsimg.com/blobby/go/9d5f89f5-7868-49b1-bc4c-48a2c35d2dec/downloads/Politica%20tratamiento%20de%20datos%20Intelecto%20SAS%20(0.pdf?ver=1602622795171"
                 alt="Política de tratamiento de datos Inteleco SAS (pdf)"
               >
-                Política de privacidad
+                {Footer.Politics}
               </a>
             </span>
 
-            <span>Contacto: (+57) 3147943431</span>
+            <span>{Footer.Contact}: (+57) 3147943431</span>
 
-            <span>
-              Dirección: Calle 10 #4-40 Oficina 1001, Edificio Bolsa de
-              Occidente.
-            </span>
+            <span>{Footer.Address}</span>
 
             <span>Cali, Valle del Cauca, Colombia</span>
           </div>
@@ -104,9 +101,7 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-      <span className="custom-copyright">
-        Copyright © 2020 Intelecto - Todos los derechos reservados.
-      </span>
+      <span className="custom-copyright">{Footer.Copyright}</span>
     </div>
   );
 };

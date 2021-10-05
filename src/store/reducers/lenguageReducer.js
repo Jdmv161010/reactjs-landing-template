@@ -2,6 +2,9 @@ import * as actionTypes from "../types/types";
 
 const initialState = [
   {
+    Others: {
+      VerMas: "Ver más",
+    },
     Navbar: {
       item1: "Acerca de nosotros",
       item2: "Servicios y productos",
@@ -93,11 +96,19 @@ const initialState = [
       estadistica4: "Años de Experiencia",
     },
     Footer: {
+      Politics: "Política de privacidad",
+      Contact: "Contacto",
+      Address:
+        "Dirección: Calle 10 #4-40 Oficina 1001, Edificio Bolsa de Occidente.",
+      Copyright: "Copyright © 2021 Intelecto - Todos los derechos reservados.",
       item2: "Enlaces de interes",
       item3: "Siguenos",
     },
   },
   {
+    Others: {
+      VerMas: "See more",
+    },
     Navbar: {
       item1: "About us",
       item2: "Services and products",
@@ -190,6 +201,11 @@ const initialState = [
       estadistica4: "Experience years",
     },
     Footer: {
+      Politics: "Privacy policy",
+      Contact: "Contact",
+      Address:
+        "Address: Street 10 #4-40 Office 1001, Edifice Bolsa de Occidente.",
+      Copyright: "Copyright © 2021 Intelecto - All rights reservered.",
       item2: "Related Links",
       item3: "Follow Us",
     },

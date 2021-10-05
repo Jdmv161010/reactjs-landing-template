@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./AboutUs.scss";
 
 export const AboutUs = () => {
-  const { PaginaHome } = useSelector((state) => state.lenguage);
+  const { PaginaHome, Others } = useSelector((state) => state.lenguage);
   const statics = [
     { title: "Microsoft Dynamics CRM", detail: "Colombia" },
     { title: "Microsoft Dynamics CRM", detail: "Latinoamérica y Caribe" },
@@ -28,7 +28,7 @@ export const AboutUs = () => {
       <div className="custom-header-content">
         <span className="custom-title-span">{PaginaHome.aboutUs}</span>
         <span className="custom-subtitle-span" style={{ width: "70%" }}>
-          {PaginaHome.detalleAboutUs} <Link to="/about">Ver más</Link>
+          {PaginaHome.detalleAboutUs} <Link to="/about">{Others.VerMas}</Link>
         </span>
       </div>
 
