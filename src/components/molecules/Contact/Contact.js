@@ -43,11 +43,6 @@ export const Contact = () => {
                 Ad - Security{" "}
               </a>
             </li>
-            <li>
-              <a target="_blank" href="https://www.xrm.com.co/">
-                xRM
-              </a>
-            </li>
           </div>
         </div>
         <div
