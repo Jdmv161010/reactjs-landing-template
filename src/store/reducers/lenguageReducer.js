@@ -18,28 +18,28 @@ const initialState = [
         "El auge de la transformación tecnológica le abre las puertas en importantes empresas, consiguiendo así altos estándares y reconocimientos a nivel latinoamericano. Intelecto es Socio Gold de Microsoft, destacándose a lo largo de su trayectoria en servicios especializados de consultoría en Microsoft Dynamics 365, integraciones con diferentes productos y tecnologías, soporte de infraestructura local y en Azure. La innovación es uno de los pilares que destaca a nuestro equipo de alto desempeño y reflejo de ello son los casos de éxito.",
       tituloPremio1: "Microsoft Gold Partner",
       detallePremio1:
-        "Somos Gold Partner de Microsoft desde hace màs de 10 años.",
+        "Somos Gold Partner de Microsoft desde hace más de 10 años.",
       tituloPremio2:
-        "Microsoft en Seguridad en Sector Pùblico y Seguridad Nacional.",
+        "Microsoft en Seguridad en Sector Público y Seguridad Nacional.",
       detallePremio2:
-        "Socio del Año de Microsoft en Seguridad en Sector Pùblico y Seguridad Nacional en Latinoamèrica y Caribe en 2014 y 2016.",
+        "Socio del Año de Microsoft en Seguridad en Sector Público y Seguridad Nacional en Latinoamérica y Caribe en 2014 y 2016.",
       tituloPremio3: "Microsoft Consulting Services en Colombia.",
       detallePremio3:
         "Socio de Servicios del Año en Microsoft en Colombia en 2014 y 2015.",
       tituloPremio4: "Microsoft Dynamics CRM en Colombia.",
       detallePremio4:
         "Socio del Año de Microsoft Dynamics CRM en Colombia en 2009,2011,2012,2013 y 2015.",
-      tituloPremio5: "Microsoft Dynamics CRM en Latinoamèrica y Caribe.",
+      tituloPremio5: "Microsoft Dynamics CRM en Latinoamérica y Caribe.",
       detallePremio5:
-        "Socio del Año de Microsoft Dynamics CRM en Latinoamèrica y Caribe en 2008 y 2009.",
+        "Socio del Año de Microsoft Dynamics CRM en Latinoamérica y Caribe en 2008 y 2009.",
     },
     Contact: {
       titulo: "Contáctenos",
       item1:
-        "Brindar un gran servicio y producto es nuestro emblema. Si tienes, peticiones, quejas o sugerencias déjanos tus datos y cuéntanos un poco más. Con gusto trabajaremos en tus inquietudes o comentarios.",
+        "Brindar un gran servicio y producto es nuestro emblema. Si tienes peticiones, quejas o sugerencias déjanos tus datos y cuéntanos un poco más. Con gusto trabajaremos en tus inquietudes o comentarios.",
       tituloForm: "Comunícate con nosotros",
       form1: "Nombre",
-      form2: "Nùmero Telefònico",
+      form2: "Número Telefónico",
       form3: "Correo",
       form4: "Asunto",
       form5: "Mensaje",
@@ -57,13 +57,13 @@ const initialState = [
         "Gestione la relación con sus clientes a través de Microsoft Dynamics 365. Obtenga todo lo que necesita en una sola herramienta. Controle los procesos de ventas, servicio al cliente, marketing, recursos humanos, entre otros. •	Ventas •	Servicio al cliente •	Marketing •	Recursos Humanos",
       servicio2: "Desarrollo",
       detalle2:
-        "Aprovechamos nuestro conocimiento y experiencias para mejorar los procesos, crear nuevos recursos o sistemas que permitan un constante avance a su empresa.  La innovación es parte fundamental de nuestros pilares y buscamos entregar los mejores resultados con excelente calidad.",
+        "Aprovechamos nuestro conocimiento y experiencias para mejorar los procesos, crear nuevos recursos o sistemas que permitan un constante avance a su empresa.  La innovación es uno de nuestros pilares y buscamos entregar los mejores resultados con excelente calidad.",
       servicio3: "Infraestructura",
       detalle3:
-        "Brindamos consultoría, implementación y soporte en infraestructura Microsoft tanto local, híbrida o en Azure. Descubre las bondades que tiene la nube de Microsoft y lo que te permite ahorrar en costos de equipos. Convierte a las plataformas en aliadas y saca el máximo provecho.",
+        "Brindamos consultoría, implementación y soporte en infraestructura Microsoft tanto local, híbrida o en Azure. Descubre las bondades que tiene la nube de Microsoft y lo que te permite ahorrar en costos de equipos. Convierte las plataformas en aliadas y saca el máximo provecho.",
       productos: "Productos Propios",
       detalleProductos:
-        "Contamos con varias soluciones que le ayudaran a brindarle mayor productividad y cumplimiento a sus procesos. ¡Da click en alguno de nuestros productos para conocer más!",
+        "Contamos con varias soluciones que le ayudarán a brindarle mayor productividad y cumplimiento a sus procesos. ¡Da click en alguno de nuestros productos para conocer más!",
     },
     PaginaHome: {
       home: "Aplicaciones empresariales que transforman su negocio",
