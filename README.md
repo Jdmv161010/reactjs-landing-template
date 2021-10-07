@@ -1,3 +1,15 @@
+# Para correr el proyecto:
+1. Asegurarse de tener instalado node.js es su última versión ESTABLE
+2. Tener el código fuente en la máquina local, ya sea clonando el repositorio o descargarlo desde las opciones de GitHub
+3. Abrir una terminal dentro de la carpeta que se cree en su máquina local
+4. En la terminal escribir: ### `npm start`
+5. A continuación debería poder observar en su navegador la aplicación ejecutandose
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
