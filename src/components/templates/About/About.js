@@ -69,12 +69,22 @@ export const About = () => {
             </video>
           </div>
           <div className="custom-content" style={{ flex: "0.9" }}>
-            <span className="custom-subtitle-span">{About.item1}</span>
+            <span
+              className="custom-subtitle-span"
+              dangerouslySetInnerHTML={{
+                __html: About.item1,
+              }}
+            ></span>
           </div>
         </div>
         <div className="custom-row">
           <div className="custom-content" style={{ flex: "0.9" }}>
-            <span className="custom-subtitle-span">{About.item2}</span>
+            <span
+              className="custom-subtitle-span"
+              dangerouslySetInnerHTML={{
+                __html: About.item2,
+              }}
+            ></span>
           </div>
           <div className="custom-image-container"></div>
         </div>

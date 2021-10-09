@@ -13,9 +13,9 @@ const initialState = [
     About: {
       titulo: "Acerca de nosotros",
       item1:
-        "Intelecto Soluciones y Tecnología S.A.S. fue creada en abril de 2002, en la ciudad de Cali. Rápidamente obtuvo participación en proyectos tecnológicos de grandes empresas en la región de distintos sectores, ayudándolas a mejorar sus procesos empresariales. De igual manera se destacó y logró entrar a competir en proyectos a nivel nacional.",
+        "Intelecto Soluciones y Tecnología S.A.S. fue creada en abril de 2002, en la ciudad de Cali.<br/><br/>Rápidamente obtuvo participación en proyectos tecnológicos de grandes empresas en la región de distintos sectores, ayudándolas a mejorar sus procesos empresariales. De igual manera se destacó y logró entrar a competir en proyectos a nivel nacional.",
       item2:
-        "El auge de la transformación tecnológica le abre las puertas en importantes empresas, consiguiendo así altos estándares y reconocimientos a nivel latinoamericano. Intelecto es Socio Gold de Microsoft, destacándose a lo largo de su trayectoria en servicios especializados de consultoría en Microsoft Dynamics 365, integraciones con diferentes productos y tecnologías, soporte de infraestructura local y en Azure. La innovación es uno de los pilares que destaca a nuestro equipo de alto desempeño y reflejo de ello son los casos de éxito.",
+        "El auge de la transformación tecnológica le abre las puertas en importantes empresas, consiguiendo así altos estándares y reconocimientos a nivel latinoamericano.<br/><br/>Intelecto es Socio Gold de Microsoft, destacándose a lo largo de su trayectoria en servicios especializados de consultoría en Microsoft Dynamics 365, integraciones con diferentes productos y tecnologías, soporte de infraestructura local y en Azure. La innovación es uno de los pilares que destaca a nuestro equipo de alto desempeño y reflejo de ello son los casos de éxito.",
       tituloPremio1: "Microsoft Gold Partner",
       detallePremio1:
         "Somos Gold Partner de Microsoft desde hace más de 10 años.",
@@ -54,16 +54,16 @@ const initialState = [
       titulo: "Servicios y productos",
       servicio1: "CRM",
       detalle1:
-        "Gestione la relación con sus clientes a través de Microsoft Dynamics 365. Obtenga todo lo que necesita en una sola herramienta. Controle los procesos de ventas, servicio al cliente, marketing, recursos humanos, entre otros. •	Ventas •	Servicio al cliente •	Marketing •	Recursos Humanos",
+        "Gestione la relación con sus clientes a través de Microsoft Dynamics 365. Obtenga todo lo que necesita en una sola herramienta. Controle los procesos de ventas, servicio al cliente, marketing, recursos humanos, entre otros.<br/>•	Ventas<br/>•	Servicio al cliente<br/>•	Marketing<br/>•	Recursos Humanos",
       servicio2: "Desarrollo",
       detalle2:
         "Aprovechamos nuestro conocimiento y experiencias para mejorar los procesos, crear nuevos recursos o sistemas que permitan un constante avance a su empresa.  La innovación es uno de nuestros pilares y buscamos entregar los mejores resultados con excelente calidad.",
       servicio3: "Infraestructura",
       detalle3:
         "Brindamos consultoría, implementación y soporte en infraestructura Microsoft tanto local, híbrida o en Azure. Descubre las bondades que tiene la nube de Microsoft y lo que te permite ahorrar en costos de equipos. Convierte las plataformas en aliadas y saca el máximo provecho.",
-      productos: "Productos Propios",
+      productos: "Productos propios",
       detalleProductos:
-        "Contamos con varias soluciones que le ayudarán a brindarle mayor productividad y cumplimiento a sus procesos. ¡Da click en alguno de nuestros productos para conocer más!",
+        "Contamos con varias soluciones que le ayudarán a brindarle mayor productividad y cumplimiento a sus procesos.<br/>¡Da click en alguno de nuestros productos para conocer más!",
     },
     PaginaHome: {
       home: "Aplicaciones empresariales que transforman su negocio",
@@ -159,7 +159,7 @@ const initialState = [
       titulo: "Products and Services",
       servicio1: "CRM",
       detalle1:
-        "Manage the relationship with your customers through Microsoft Dynamics 365. Get everything you need in a single tool. Control sales processes, customer service, marketing, human resources, and others. •	Sales •	Customer service • Marketing •	Human Resources",
+        "Manage the relationship with your customers through Microsoft Dynamics 365. Get everything you need in a single tool. Control sales processes, customer service, marketing, human resources, and others.<br/>•	Sales<br/>•	Customer service<br/>• Marketing<br/>• Human Resources",
       servicio2: "Development",
       detalle2:
         "We use our experience and knowledge in different areas to improve processes, create new resources or systems that allow constant progress for your company. Innovation is a fundamental part of our DNA, and we seek to deliver the best results with excellent quality.",

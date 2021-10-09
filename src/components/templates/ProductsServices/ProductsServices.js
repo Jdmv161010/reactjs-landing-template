@@ -66,9 +66,12 @@ export const ProductsServices = () => {
               {ProductsServices.servicio1}
             </span>
             <br />
-            <span className="custom-subtitle-span">
-              {ProductsServices.detalle1}
-            </span>
+            <span
+              className="custom-subtitle-span"
+              dangerouslySetInnerHTML={{
+                __html: ProductsServices.detalle1,
+              }}
+            ></span>
           </div>
         </div>
         <div className="custom-row">
@@ -111,9 +114,10 @@ export const ProductsServices = () => {
           <span
             className="custom-subtitle-span"
             style={{ textAlign: "center" }}
-          >
-            {ProductsServices.detalleProductos}
-          </span>
+            dangerouslySetInnerHTML={{
+              __html: ProductsServices.detalleProductos,
+            }}
+          ></span>
         </div>
 
         <div className="custom-card-container">
