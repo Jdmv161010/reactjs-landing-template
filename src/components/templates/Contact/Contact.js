@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactBingmaps } from "react-bingmaps";
 import { makeStyles, MenuItem, TextField } from "@material-ui/core";
 import "./Contact.scss";
@@ -12,8 +12,21 @@ const useStyles = makeStyles(() => ({
 }));
 
 export const Contact = () => {
+  const initState = {
+    name: "",
+    phone: "",
+    email: "",
+    affair: "",
+    message: "",
+  };
+
   const classes = useStyles();
   const { Contact } = useSelector((state) => state.lenguage);
+  const [form, setForm] = useState(initState);
+
+  const handleSubmit = () => {
+    console.log(form);
+  };
 
   return (
     <div id="ContactLanding" className="custom-contact-container">
@@ -46,7 +59,7 @@ export const Contact = () => {
                     location: [3.451166456952944, -76.53365181503032],
                     option: {
                       color: "rgb(0, 175, 239)",
-                      title: "INTELECTO SAS",
+                      title: "INTELECTO S.A.S.",
                     },
                     addHandler: { type: "click" },
                   },
@@ -62,6 +75,7 @@ export const Contact = () => {
                 </span>
                 <div className="custom-form">
                   <TextField
+                    value={form.name}
                     style={{ width: "100%", marginBottom: "15px" }}
                     label={Contact.form1}
                     variant="filled"
@@ -73,11 +87,14 @@ export const Contact = () => {
                         color: "rgb(0,175,239)",
                       },
                     }}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
                   />
 
                   <TextField
+                    value={form.phone}
                     style={{ width: "100%", marginBottom: "15px" }}
                     label={Contact.form2}
+                    type="number"
                     variant="filled"
                     InputProps={{
                       classes: { ...classes },
@@ -87,8 +104,12 @@ export const Contact = () => {
                         color: "rgb(0,175,239)",
                       },
                     }}
+                    onChange={(e) =>
+                      setForm({ ...form, phone: e.target.value })
+                    }
                   />
                   <TextField
+                    value={form.email}
                     style={{ width: "100%", marginBottom: "15px" }}
                     label={Contact.form3}
                     variant="filled"
@@ -100,8 +121,12 @@ export const Contact = () => {
                         color: "rgb(0,175,239)",
                       },
                     }}
+                    onChange={(e) =>
+                      setForm({ ...form, email: e.target.value })
+                    }
                   />
                   <TextField
+                    value={form.affair}
                     select
                     style={{ width: "100%", marginBottom: "15px" }}
                     label={Contact.form4}
@@ -115,6 +140,7 @@ export const Contact = () => {
                       },
                     }}
                     SelectProps={{
+                      native: true,
                       MenuProps: {
                         anchorOrigin: {
                           vertical: "bottom",
@@ -123,25 +149,44 @@ export const Contact = () => {
                         getContentAnchorEl: null,
                       },
                     }}
+                    onChange={(e) =>
+                      setForm({ ...form, affair: e.target.value })
+                    }
                   >
-                    <MenuItem className="custom-dropdown-item">
+                    <option
+                      value={Contact.asunto1}
+                      className="custom-dropdown-item"
+                    >
                       {Contact.asunto1}
-                    </MenuItem>
-                    <MenuItem className="custom-dropdown-item">
+                    </option>
+                    <option
+                      value={Contact.asunto2}
+                      className="custom-dropdown-item"
+                    >
                       {Contact.asunto2}
-                    </MenuItem>
-                    <MenuItem className="custom-dropdown-item">
+                    </option>
+                    <option
+                      value={Contact.asunto3}
+                      className="custom-dropdown-item"
+                    >
                       {Contact.asunto3}
-                    </MenuItem>
-                    <MenuItem className="custom-dropdown-item">
+                    </option>
+                    <option
+                      value={Contact.asunto4}
+                      className="custom-dropdown-item"
+                    >
                       {Contact.asunto4}
-                    </MenuItem>
-                    <MenuItem className="custom-dropdown-item">
+                    </option>
+                    <option
+                      value={Contact.asunto5}
+                      className="custom-dropdown-item"
+                    >
                       {Contact.asunto5}
-                    </MenuItem>
+                    </option>
                   </TextField>
 
                   <TextField
+                    value={form.message}
                     style={{ width: "100%" }}
                     multiline
                     rows={6}
@@ -155,9 +200,14 @@ export const Contact = () => {
                         color: "rgb(0,175,239)",
                       },
                     }}
+                    onChange={(e) =>
+                      setForm({ ...form, message: e.target.value })
+                    }
                   />
                 </div>
-                <button className="custom-button-field">{Contact.boton}</button>
+                <button className="custom-button-field" onClick={handleSubmit}>
+                  {Contact.boton}
+                </button>
               </div>
             </div>
           </div>
