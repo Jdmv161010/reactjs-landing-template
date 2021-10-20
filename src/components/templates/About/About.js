@@ -43,7 +43,7 @@ export const About = () => {
     <div id="AboutLanding" className="custom-about-container">
       <div
         className="custom-content-section"
-        style={{ margin: "0 !important", height: "70vh" }}
+        style={{ margin: "0 !important", height: "auto" }}
       >
         <div className="custom-header-content">
           <span className="custom-title-span">{About.titulo}</span>
@@ -51,24 +51,20 @@ export const About = () => {
       </div>
 
       <div id="AboutSection1" className="custom-content-section">
-        <div className="custom-row">
-          <div className="custom-video-container">
-            <video
-              className="video"
-              preload="auto"
-              autoPlay={true}
-              loop="loop"
-              aria-hidden={true}
-              playsInline={true}
-              muted
-              volume="0"
-              width="600"
-              height="auto"
-            >
-              <source src={Cali} type="video/mp4" />
-            </video>
-          </div>
-          <div className="custom-content" style={{ flex: "0.9" }}>
+        <span
+          className="custom-subtitle-span"
+          style={{ width: "60%", textAlign: "center" }}
+        >
+          {About.item1}
+        </span>
+
+        <div className="custom-row" style={{ marginTop: "100px" }}>
+          <div className="custom-image-container CRM" style={{ flex: 1 }}></div>
+          <div className="custom-content" style={{ flex: 1 }}>
+            <span className="custom-title-span">
+              {/* {ProductsServices.servicio1} */}
+            </span>
+            <br />
             <span
               className="custom-subtitle-span"
               dangerouslySetInnerHTML={{
@@ -77,8 +73,12 @@ export const About = () => {
             ></span>
           </div>
         </div>
+
         <div className="custom-row">
-          <div className="custom-content" style={{ flex: "0.9" }}>
+          <div
+            className="custom-content"
+            style={{ flex: 1, alignItems: "flex-start" }}
+          >
             <span
               className="custom-subtitle-span"
               dangerouslySetInnerHTML={{

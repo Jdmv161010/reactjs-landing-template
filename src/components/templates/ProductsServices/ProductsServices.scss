@@ -2,20 +2,23 @@
   display: flex;
   flex-direction: column;
   max-width: 100vw !important;
-  background: rgb(15, 12, 13);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../../../assets/images/BackGrounds/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #ProductsServicesLanding {
   .custom-content-section {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
-      ),
-      url("../../../assets/images/Services&Productos_Images/Banner_S&P_Intelecto.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .custom-header-content {
+    margin-top: 100px;
   }
 
   .custom-title-span {
@@ -23,30 +26,21 @@
   }
 
   #ProductsServicesSection1 {
-    background: rgb(15, 12, 13);
-    margin: 50px 0;
     height: auto;
 
     .custom-row {
-      padding: 0;
-      margin: 30px;
+      background: rgb(22, 22, 22);
+      box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+      width: 1060px;
+      height: 100%;
+      padding: 30px !important;
+      margin: 40px 100px;
+      align-items: stretch;
     }
 
-    .custom-video-container {
-      height: auto;
-      width: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .video {
-        border-radius: 5px;
-      }
-    }
     .custom-image-container {
       background-repeat: no-repeat;
       background-size: cover;
-
       height: 350px;
       width: 450px;
       display: flex;
@@ -65,50 +59,59 @@
     }
 
     .custom-content {
-      height: inherit;
+      min-height: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
+      align-items: flex-end;
+      justify-content: center;
 
+      .custom-title-span,
       .custom-subtitle-span {
-        width: 90%;
+        width: 94%;
       }
     }
+  }
 
-    .custom-card-container {
-      margin-top: 50px;
-      flex-wrap: wrap;
+  .own-products {
+    background: rgb(15, 12, 13);
+    padding: 100px 0 !important;
+
+    .custom-header-content {
+      margin: 0;
+      justify-content: center;
     }
+  }
 
-    .custom-card {
-      flex: 1;
-      cursor: pointer;
+  .custom-card-container {
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
 
-      &:hover {
-        transform: scale(1.06, 1.06);
-      }
+  .custom-card {
+    flex: 1;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.06, 1.06);
     }
+  }
 
-    .custom-card-img {
-      height: 150px !important;
-      width: 150px !important;
-      backdrop-filter: blur(5px) saturate(100%);
-      -webkit-backdrop-filter: blur(5px) saturate(100%);
-      // background-color: rgba(0, 175, 239, 0.4);
-      border: 3px solid rgb(0, 175, 239);
-      background-repeat: no-repeat;
-      background-size: 80%;
-      background-position: center;
-    }
+  .custom-card-img {
+    height: 150px !important;
+    width: 150px !important;
+    backdrop-filter: blur(5px) saturate(100%);
+    -webkit-backdrop-filter: blur(5px) saturate(100%);
+    border: 3px solid rgb(0, 175, 239);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+  }
 
-    .custom-title-span {
-      width: 90%;
-      text-align: center;
-    }
+  .custom-title-span {
+    text-align: center;
+  }
 
-    .custom-subtitle-span {
-      text-align: justify;
-    }
+  .custom-subtitle-span {
+    text-align: justify;
   }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Adsecurity from "../../../assets/images/Services&Productos_Images/adsecurity.png";
 import AdsecurityPDF from "../../../assets/images/Services&Productos_Images/PdfProductos/AdSecuty.jpeg";
 import Girapp from "../../../assets/images/Services&Productos_Images/Girapp.png";
@@ -7,7 +8,6 @@ import BotPDF from "../../../assets/images/Services&Productos_Images/PdfProducto
 import rMarketing from "../../../assets/images/Services&Productos_Images/rMarketing.png";
 import rMarketingPDF from "../../../assets/images/Services&Productos_Images/PdfProductos/rMarketing.pdf";
 import "./ProductsServices.scss";
-import { useSelector } from "react-redux";
 
 export const ProductsServices = () => {
   const services = [
@@ -48,7 +48,7 @@ export const ProductsServices = () => {
     >
       <div
         className="custom-content-section"
-        style={{ margin: "0 !important", height: "70vh" }}
+        style={{ margin: "0 !important", height: "auto" }}
       >
         <div className="custom-header-content">
           <span className="custom-title-span">{ProductsServices.titulo}</span>
@@ -56,12 +56,16 @@ export const ProductsServices = () => {
       </div>
 
       <div id="ProductsServicesSection1" className="custom-content-section">
-        <div className="custom-row">
-          <div
-            className="custom-image-container CRM"
-            style={{ flex: "1" }}
-          ></div>
-          <div className="custom-content" style={{ flex: "1" }}>
+        <span
+          className="custom-subtitle-span"
+          style={{ width: "60%", textAlign: "center" }}
+        >
+          {ProductsServices.detalleProductos}
+        </span>
+
+        <div className="custom-row" style={{ marginTop: "100px" }}>
+          <div className="custom-image-container CRM" style={{ flex: 1 }}></div>
+          <div className="custom-content" style={{ flex: 1 }}>
             <span className="custom-title-span">
               {ProductsServices.servicio1}
             </span>
@@ -74,8 +78,12 @@ export const ProductsServices = () => {
             ></span>
           </div>
         </div>
+
         <div className="custom-row">
-          <div className="custom-content" style={{ flex: "1" }}>
+          <div
+            className="custom-content"
+            style={{ flex: 1, alignItems: "flex-start" }}
+          >
             <span className="custom-title-span">
               {ProductsServices.servicio2}
             </span>
@@ -86,15 +94,16 @@ export const ProductsServices = () => {
           </div>
           <div
             className="custom-image-container DESARROLLO"
-            style={{ flex: "1" }}
+            style={{ flex: 1 }}
           ></div>
         </div>
-        <div className="custom-row">
+
+        <div className="custom-row" style={{ marginBottom: "80px" }}>
           <div
             className="custom-image-container INFRAESTRUCTURA"
-            style={{ flex: "1" }}
+            style={{ flex: 1 }}
           ></div>
-          <div className="custom-content" style={{ flex: "1" }}>
+          <div className="custom-content" style={{ flex: 1 }}>
             <span className="custom-title-span">
               {ProductsServices.servicio3}
             </span>
@@ -104,11 +113,11 @@ export const ProductsServices = () => {
             </span>
           </div>
         </div>
+      </div>
+
+      <div className="own-products">
         <div className="custom-header-content">
-          <span
-            className="custom-title-span"
-            style={{ marginTop: "80px", textAlign: "center" }}
-          >
+          <span className="custom-title-span" style={{ textAlign: "center" }}>
             {ProductsServices.productos}
           </span>
           <span
