@@ -1,27 +1,17 @@
 #ServiceProduct {
   background: rgb(15, 12, 13);
 
-  .custom-title-span {
-    margin: 0;
-  }
-
   .custom-card-container {
     flex-wrap: wrap;
+    gap: 30px;
   }
 
   .custom-card {
     background: rgb(22, 22, 22);
-    width: 45%;
-    max-width: 45%;
-    height: auto;
-    padding: 20px !important;
-    margin: 0 !important;
-    margin-bottom: 15px !important;
-    border-radius: 5px;
+    width: 650px;
+    height: 190px;
+    padding: 0 20px !important;
     flex-direction: row;
-  }
-
-  .custom-card {
     transition: transform 0.2s;
 
     &:hover {
@@ -34,7 +24,27 @@
     height: 130px !important;
     width: 130px !important;
     margin-right: 20px;
-    border-radius: 5px;
+    border-radius: 0;
     border: none;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #ServiceProduct {
+    height: auto;
+    padding: 50px 0;
+    gap: 50px;
+
+    .custom-card-container {
+      gap: 20px;
+    }
+
+    .custom-card {
+      width: 90%;
+    }
   }
 }

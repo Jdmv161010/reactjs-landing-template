@@ -13,18 +13,16 @@ export const Navbar = ({ options }) => {
   };
 
   return (
-    <nav className="custom-navbar">
-      <div className="custom-navbar-brand">
-        <div>
-          <Link to="/">
-            <div className="custom-logo-container">
-              <img src={logo} alt="Intelecto S.A.S." />
-            </div>
-          </Link>
-        </div>
+    <nav id="custom-navbar">
+      <div className="brand">
+        <Link to="/">
+          <div className="logo-container">
+            <img src={logo} alt="Intelecto S.A.S." />
+          </div>
+        </Link>
       </div>
 
-      <div className="custom-navbar-options">
+      <div className="options">
         {options.map((option, index) => (
           <Link key={index} to={option.route}>
             {option.label}
@@ -33,7 +31,7 @@ export const Navbar = ({ options }) => {
 
         <button
           type="button"
-          className="custom-change-lenguage-button"
+          className="change-lenguage"
           onClick={handleChangeLenguage}
         >
           ESP/ENG

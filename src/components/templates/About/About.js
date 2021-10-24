@@ -40,7 +40,7 @@ export const About = () => {
   );
 
   return (
-    <div id="AboutLanding" className="custom-about-container">
+    <div id="AboutLanding">
       <div
         className="custom-content-section"
         style={{ margin: "0 !important", height: "auto" }}
@@ -51,13 +51,6 @@ export const About = () => {
       </div>
 
       <div id="AboutSection1" className="custom-content-section">
-        <span
-          className="custom-subtitle-span"
-          style={{ width: "60%", textAlign: "center" }}
-        >
-          {About.item1}
-        </span>
-
         <div className="custom-row" style={{ marginTop: "100px" }}>
           <div className="custom-image-container CRM" style={{ flex: 1 }}></div>
           <div className="custom-content" style={{ flex: 1 }}>
@@ -74,7 +67,7 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="custom-row">
+        {/* <div className="custom-row">
           <div
             className="custom-content"
             style={{ flex: 1, alignItems: "flex-start" }}
@@ -87,7 +80,7 @@ export const About = () => {
             ></span>
           </div>
           <div className="custom-image-container"></div>
-        </div>
+        </div> */}
         <div className="custom-card-container">
           {services.map(({ title, detail }) => staticsCard(title, detail))}
         </div>

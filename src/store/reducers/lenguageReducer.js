@@ -6,8 +6,8 @@ const initialState = [
       VerMas: "Ver más",
     },
     Navbar: {
-      item1: "Acerca de nosotros",
-      item2: "Servicios y productos",
+      item1: "Nosotros",
+      item2: "Soluciones",
       item3: "Contáctenos",
     },
     About: {
@@ -51,7 +51,7 @@ const initialState = [
       boton: "Enviar",
     },
     ProductsServices: {
-      titulo: "Servicios y productos",
+      titulo: "Nuestras soluciones",
       servicio1: "CRM",
       detalle1:
         "Gestione la relación con sus clientes a través de Microsoft Dynamics 365. Obtenga todo lo que necesita en una sola herramienta. Controle los procesos de ventas, servicio al cliente, marketing, recursos humanos, entre otros.<br/>•	Ventas<br/>•	Servicio al cliente<br/>•	Marketing<br/>•	Recursos Humanos",
@@ -80,10 +80,10 @@ const initialState = [
       servicio2: "CRM",
       detalleS2:
         "Obtenga una vista 360° de sus clientes. Gestione la información y procesos con sus clientes aprovechando integraciones con los aplicativos que ya maneja su empresa.",
-      servicio3: "INFRAESTRUCTURA",
+      servicio3: "Infraestructura",
       detalleS3:
         "Permite que tu empresa vaya a la vanguardia y haz de la transformación tecnológica una aliada. La infraestructura es la columna vertebral de las compañías, ya sea híbrida o en la nube.  Consulta la mejor opción para tu empresa.",
-      productos: "PRODUCTOS PROPIOS",
+      productos: "Productos propios",
       detalleP:
         "Potencializa los procesos empresariales con Chatbots, autogestión de contraseñas y muchas otras herramientas que tenemos para tu compañía.",
       clientes: "Clientes",
@@ -101,8 +101,8 @@ const initialState = [
       Address:
         "Dirección: Calle 10 #4-40 Oficina 1001, Edificio Bolsa de Occidente.",
       Copyright: "Copyright © 2021 Intelecto - Todos los derechos reservados.",
-      item2: "Enlaces de interes",
-      item3: "Siguenos",
+      item2: "Enlaces de interés",
+      item3: "Síguenos",
     },
   },
   {
@@ -111,7 +111,7 @@ const initialState = [
     },
     Navbar: {
       item1: "About us",
-      item2: "Services and products",
+      item2: "Solutions",
       item3: "Contact us",
     },
     About: {
@@ -156,7 +156,7 @@ const initialState = [
       boton: "Send",
     },
     ProductsServices: {
-      titulo: "Products and Services",
+      titulo: "Our solutions",
       servicio1: "CRM",
       detalle1:
         "Manage the relationship with your customers through Microsoft Dynamics 365. Get everything you need in a single tool. Control sales processes, customer service, marketing, human resources, and others.<br/>•	Sales<br/>•	Customer service<br/>• Marketing<br/>• Human Resources",

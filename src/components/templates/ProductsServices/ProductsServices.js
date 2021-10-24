@@ -56,13 +56,6 @@ export const ProductsServices = () => {
       </div>
 
       <div id="ProductsServicesSection1" className="custom-content-section">
-        <span
-          className="custom-subtitle-span"
-          style={{ width: "60%", textAlign: "center" }}
-        >
-          {ProductsServices.detalleProductos}
-        </span>
-
         <div className="custom-row" style={{ marginTop: "100px" }}>
           <div className="custom-image-container CRM" style={{ flex: 1 }}></div>
           <div className="custom-content" style={{ flex: 1 }}>

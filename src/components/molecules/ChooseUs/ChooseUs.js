@@ -1,12 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import BG_Principal from "../../../assets/images/BackGrounds/BG_Principal.mp4";
+import { useSelector } from "react-redux";
 import Usuarios from "../../../assets/images/IconChooseUs/Usuarios.svg";
 import Clientes from "../../../assets/images/IconChooseUs/Clientes.svg";
 import Implementacion from "../../../assets/images/IconChooseUs/Implementacion.svg";
 import Experiencia from "../../../assets/images/IconChooseUs/Experiencia.svg";
 import "./ChooseUs.scss";
-import { useSelector } from "react-redux";
 
 export const ChooseUs = () => {
   const { PaginaHome } = useSelector((state) => state.lenguage);
@@ -35,17 +33,13 @@ export const ChooseUs = () => {
 
   return (
     <div id="ChooseUs">
-      <div style={{ flex: 1.1 }}></div>
-      <div className="custom-content-section" style={{ flex: 1.9 }}>
+      <div className="custom-content-section">
         <div className="custom-header-content">
           <span className="custom-title-span">{PaginaHome.chooseUs}</span>
-          <span
-            className="custom-subtitle-span span-flex"
-            style={{ width: "100%", textAlign: "justify" }}
-          >
-            <cite style={{ fontSize: "19px" }}>{PaginaHome.testimonio}</cite>
-            <span style={{ fontSize: "18px" }}>
-              <b style={{ fontSize: "18px" }}>Claudia Fernanda Taborda H.</b>
+          <span className="custom-subtitle-span span-flex">
+            <cite>{PaginaHome.testimonio}</cite>
+            <span style={{ textAlign: "left" }}>
+              <b>Claudia Fernanda Taborda H.</b>
               <br />
               Cámara de comercio de Cali.
               <br />
@@ -53,7 +47,6 @@ export const ChooseUs = () => {
             </span>
           </span>
         </div>
-
         <div className="custom-card-container">
           {statics.map(({ title, detail, imagen }) =>
             staticsCard(title, detail, imagen)

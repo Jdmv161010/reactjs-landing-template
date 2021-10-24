@@ -65,22 +65,19 @@ export const Partners = () => {
     </div>
   );
 
-  setTimeout(() => {
-    handleChangeNext();
-  }, 3000);
+  useEffect(() => {
+    setTimeout(() => {
+      handleChangeNext();
+    }, 3000);
+  });
 
   return (
     <div id="Partners">
-      <span
-        className="custom-title-span"
-        style={{
-          width: "100%",
-          textAlign: "center",
-          marginTop: "30px",
-        }}
-      >
-        {PaginaHome.clientes}
-      </span>
+      <div className="custom-header-content">
+        <span className="custom-title-span" style={{ textAlign: "center" }}>
+          {PaginaHome.clientes}
+        </span>
+      </div>
       <div className="custom-content-section">
         <div className="custom-image-container">
           {carousel.map(({ image, alt }) => logo(image, alt))}

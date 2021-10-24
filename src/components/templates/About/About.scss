@@ -1,4 +1,4 @@
-.custom-about-container {
+#AboutLanding {
   display: flex;
   flex-direction: column;
   max-width: 100vw !important;
@@ -10,9 +10,7 @@
     url("../../../assets/images/BackGrounds/contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-#AboutLanding {
   .custom-content-section {
     justify-content: space-between;
   }

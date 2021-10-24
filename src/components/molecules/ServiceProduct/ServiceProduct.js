@@ -1,12 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Develop from "../../../assets/images/IconServicesProducts/desarrollador_ServiciosProductos.svg";
 import CRM from "../../../assets/images/IconServicesProducts/crm.svg";
 import infra from "../../../assets/images/IconServicesProducts/estructure.svg";
 import OwnProducts from "../../../assets/images/IconServicesProducts/ownProducts.svg";
 import "./ServiceProduct.scss";
-import "animate.css";
-import { useSelector } from "react-redux";
 
 export const ServiceProduct = () => {
   const { PaginaHome, Others } = useSelector((state) => state.lenguage);
@@ -36,15 +35,11 @@ export const ServiceProduct = () => {
   const staticsCard = (title, detail, imagen) => (
     <div className="custom-card">
       <div className="custom-card-img">
-        <img
-          src={imagen}
-          alt={title}
-          style={{ width: "90%", height: "90%" }}
-        ></img>
+        <img src={imagen} alt={title}></img>
       </div>
       <div className="custom-card-content" style={{ flex: 1 }}>
-        <span style={{ fontWeight: 600 }}>{title}</span>
-        <span style={{ textAlign: "justify" }}>
+        <span className="custom-card-value">{title}</span>
+        <span className="custom-card-detail">
           {detail} <Link to="/services-products">{Others.VerMas}.</Link>
         </span>
       </div>
@@ -57,6 +52,11 @@ export const ServiceProduct = () => {
         <span className="custom-title-span">{PaginaHome.serviceProduct}</span>
       </div>
 
+      <div className="custom-card-container">
+        {services.map(({ title, detail, imagen }) =>
+          staticsCard(title, detail, imagen)
+        )}
+      </div>
       <button className="custom-button-field">
         <a
           target="_blank"
@@ -65,12 +65,6 @@ export const ServiceProduct = () => {
           {PaginaHome.buttonMicrosoft}
         </a>
       </button>
-
-      <div className="custom-card-container">
-        {services.map(({ title, detail, imagen }) =>
-          staticsCard(title, detail, imagen)
-        )}
-      </div>
     </div>
   );
 };

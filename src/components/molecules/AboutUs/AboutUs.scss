@@ -1,25 +1,56 @@
 #AboutUs {
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
     url("../../../assets/images/BackGrounds/BG_AboutUs.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  .custom-subtitle-span {
+    width: 70%;
+  }
 
   .custom-card {
     flex: 1;
+    height: 100%;
   }
 
   .custom-card-img {
     backdrop-filter: blur(5px) saturate(100%);
     -webkit-backdrop-filter: blur(5px) saturate(100%);
     background-color: rgba(17, 25, 40, 0.6);
-    border: 1px solid rgb(0,175,239);
+    border: 1px solid rgb(0, 175, 239);
     background-image: url("../../../assets/images/Premio_AboutUs.svg");
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #AboutUs {
+    height: auto;
+    padding: 50px 0;
+    gap: 50px;
+
+    .custom-card-container {
+      align-items: stretch;
+    }
+
+    .custom-card {
+      height: inherit !important;
+      justify-content: flex-start;
+    }
+
+    .custom-card-img {
+      height: 70px !important;
+      width: 70px !important;
+    }
+
+    .detail {
+      display: none;
+    }
   }
 }

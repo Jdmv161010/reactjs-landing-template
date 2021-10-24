@@ -1,16 +1,28 @@
 #ChooseUs {
+  padding: 0 50px;
+  display: flex;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
     url("../../../assets/images/BackGrounds/BG_WhyUs.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 
-  padding-right: 60px;
-  display: flex;
-  flex-direction: row;
+  .custom-content-section {
+    width: 70%;
+  }
+
+  .custom-card {
+    flex: 1;
+    height: 100%;
+  }
+
+  .custom-header-content {
+    align-items: flex-start;
+  }
 
   .custom-aux-content {
     height: 100%;
@@ -18,14 +30,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .custom-header-content {
-    align-items: flex-start;
-  }
-
-  .custom-card-container {
-    justify-content: space-between;
   }
 
   .custom-card-img {
@@ -38,14 +42,23 @@
     background-position: center;
   }
 
-  span {
-    text-align: justify;
-  }
-
   .span-flex {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #ChooseUs {
+    padding: 0;
+
+    .custom-content-section {
+      height: auto;
+      padding: 50px 0;
+      gap: 50px;
+      width: 100%;
+    }
   }
 }

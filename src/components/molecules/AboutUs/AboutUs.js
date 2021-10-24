@@ -20,14 +20,15 @@ export const AboutUs = () => {
     <div className="custom-card">
       <div className="custom-card-img"></div>
       <span className="custom-card-value">{title}</span>
-      <span>{detail}</span>
+      <span className="detail">{detail}</span>
     </div>
   );
+
   return (
     <div id="AboutUs" className="custom-content-section">
       <div className="custom-header-content">
         <span className="custom-title-span">{PaginaHome.aboutUs}</span>
-        <span className="custom-subtitle-span" style={{ width: "70%" }}>
+        <span className="custom-subtitle-span">
           {PaginaHome.detalleAboutUs} <Link to="/about">{Others.VerMas}</Link>
         </span>
       </div>

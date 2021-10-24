@@ -4,41 +4,39 @@
 
 #Contact {
   background: rgb(15, 12, 13);
-
-  flex-direction: row;
-  padding: 70px 70px;
   height: 60vh;
+  padding: 70px 70px;
+  flex-direction: row;
 
   .custom-contact-info {
+    flex: 1;
     height: 250px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
 
     #Icono {
       height: auto;
       width: 100%;
+      gap: 10px;
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
       justify-content: flex-end;
 
       img {
         height: 40px;
-        width: 40px;
-        margin-left: 10px;
       }
     }
   }
 
   .custom-contact-title {
-    font-size: 20px;
+    font-size: 23px !important;
     font-weight: bold;
   }
 
   .custom-contact-location {
-    font-size: 14px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -47,5 +45,14 @@
     span {
       text-align: left;
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #Contact {
+    height: auto;
+    padding: 50px 10px;
+    gap: 10px;
+    align-items: stretch;
   }
 }

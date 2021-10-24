@@ -7,13 +7,11 @@
 #Home {
   #Section1 {
     background-color: rgba(0, 0, 0, 0.3);
-    background-repeat: no-repeat;
-    background-size: cover;
     justify-content: center;
 
     video {
-      position: fixed;
-      height: auto;
+      position: absolute;
+      object-fit: cover;
       z-index: -100;
     }
 

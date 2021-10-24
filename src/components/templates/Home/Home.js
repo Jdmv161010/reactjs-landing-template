@@ -20,15 +20,15 @@ export const Home = () => {
         <video
           className="video"
           preload="auto"
-          autoPlay={true}
-          loop="loop"
-          aria-hidden={true}
-          playsInline={true}
+          autoPlay
+          loop
+          aria-hidden
+          playsInline
           muted
-          volume="0"
         >
           <source src={BG_Principal} type="video/mp4" />
         </video>
+
         <span className="custom-title-span" style={{ width: "100%" }}>
           {PaginaHome.home}
         </span>
@@ -41,15 +41,19 @@ export const Home = () => {
       <div id="Section2">
         <AboutUs />
       </div>
+      <div className="custom-separator" />
       <div id="Section3">
         <ServiceProduct />
       </div>
+      <div className="custom-separator" />
       <div id="Section4">
         <Partners />
       </div>
+      <div className="custom-separator" />
       <div id="Section5">
         <ChooseUs />
       </div>
+      <div className="custom-separator" />
     </div>
   );
 };
