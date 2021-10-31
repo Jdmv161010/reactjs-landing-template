@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Cali from "../../../assets/images/BackGrounds/Cali_City.mp4";
+import MicrosoftTeams from "../../../assets/images/BackGrounds/MicrosoftTeams.png";
+import CMMIDEV from "../../../assets/images/BackGrounds/CMMIDEV.png";
 import "./About.scss";
 
 export const About = () => {
@@ -40,7 +41,7 @@ export const About = () => {
   );
 
   return (
-    <div id="AboutLanding">
+    <div id="AboutLanding" className="custom-about-container">
       <div
         className="custom-content-section"
         style={{ margin: "0 !important", height: "auto" }}
@@ -51,13 +52,15 @@ export const About = () => {
       </div>
 
       <div id="AboutSection1" className="custom-content-section">
-        <div className="custom-row" style={{ marginTop: "100px" }}>
-          <div className="custom-image-container CRM" style={{ flex: 1 }}></div>
+        <div
+          className="custom-row"
+          style={{ marginTop: "100px", marginBottom: "80px" }}
+        >
+          <div className="custom-image-container" style={{ flex: 1 }}>
+            <img src={CMMIDEV} alt="CMMIDEV" className="cmmidev" />
+            <img src={MicrosoftTeams} alt="MicrosoftTeams" />
+          </div>
           <div className="custom-content" style={{ flex: 1 }}>
-            <span className="custom-title-span">
-              {/* {ProductsServices.servicio1} */}
-            </span>
-            <br />
             <span
               className="custom-subtitle-span"
               dangerouslySetInnerHTML={{
@@ -66,21 +69,6 @@ export const About = () => {
             ></span>
           </div>
         </div>
-
-        {/* <div className="custom-row">
-          <div
-            className="custom-content"
-            style={{ flex: 1, alignItems: "flex-start" }}
-          >
-            <span
-              className="custom-subtitle-span"
-              dangerouslySetInnerHTML={{
-                __html: About.item2,
-              }}
-            ></span>
-          </div>
-          <div className="custom-image-container"></div>
-        </div> */}
         <div className="custom-card-container">
           {services.map(({ title, detail }) => staticsCard(title, detail))}
         </div>

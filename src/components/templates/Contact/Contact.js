@@ -25,7 +25,8 @@ export const Contact = () => {
   const [form, setForm] = useState(initState);
 
   const handleSubmit = () => {
-    console.log(form);
+    window.alert("Enviado correctamente");
+    setForm(initState);
   };
 
   return (
@@ -67,9 +68,7 @@ export const Contact = () => {
             ></ReactBingmaps>
 
             <div className="custom-form-section">
-              <span className="custom-title-span" style={{ fontSize: "25px" }}>
-                {Contact.tituloForm}
-              </span>
+              <span className="custom-title-span">{Contact.tituloForm}</span>
               <div className="custom-form">
                 <TextField
                   value={form.name}

@@ -13,9 +13,7 @@ const initialState = [
     About: {
       titulo: "Acerca de nosotros",
       item1:
-        "Intelecto Soluciones y Tecnología S.A.S. fue creada en abril de 2002, en la ciudad de Cali.<br/><br/>Rápidamente obtuvo participación en proyectos tecnológicos de grandes empresas en la región de distintos sectores, ayudándolas a mejorar sus procesos empresariales. De igual manera se destacó y logró entrar a competir en proyectos a nivel nacional.",
-      item2:
-        "El auge de la transformación tecnológica le abre las puertas en importantes empresas, consiguiendo así altos estándares y reconocimientos a nivel latinoamericano.<br/><br/>Intelecto es Socio Gold de Microsoft, destacándose a lo largo de su trayectoria en servicios especializados de consultoría en Microsoft Dynamics 365, integraciones con diferentes productos y tecnologías, soporte de infraestructura local y en Azure. La innovación es uno de los pilares que destaca a nuestro equipo de alto desempeño y reflejo de ello son los casos de éxito.",
+        "Intelecto Soluciones y Tecnología S.A.S. fue creada en abril de 2002, en la ciudad de Cali. Desde su creación, fue certificada como Socio Gold de Microsoft destacándose a lo largo de su trayectoria en servicios especializados de consultoría en Microsoft Dynamics 365, integraciones y desarrollos con Power Apps, Power Automate, soporte de infraestructura local y en Azure. Intelecto cuenta con la certificación de CMMI nivel 3. <br/> La innovación es uno de los pilares que destaca a nuestro equipo de alto desempeño y reflejo de ello son los casos de éxito. Intelecto ha sido reconocida por Microsoft con premios tanto nacionales como a nivel internacional.",
       tituloPremio1: "Microsoft Gold Partner",
       detallePremio1:
         "Somos Gold Partner de Microsoft desde hace más de 10 años.",
@@ -117,9 +115,7 @@ const initialState = [
     About: {
       titulo: "About Us",
       item1:
-        "Intelecto Soluciones and Tecnología S.A.S. was created in April 2002, in the city of Cali – Colombia and quickly obtained participation in technology projects of large companies in the region from different sectors, helping them to improve their business processes.",
-      item2:
-        "The rise of digital transformation has speed up the growth of many tech companies that help their customers to improve their processes through the implementation of TI solutions. Intelecto is a Microsoft Gold Partner, that has stood out throughout its career in specialized consulting services in Microsoft Dynamics 365, integrations with different products and technologies, local infrastructure support and Microsoft Azure cloud services. 19 years of experience, more than 20 companies and thousands of happy users are the reflection of working with passion and having a high-performance team that works alongside our clients.",
+        "Intelecto Soluciones y Tecnología S.A.S. was created in April 2002, in the city of Cali. Since its creation, it was certified as a Microsoft Gold Partner, standing out throughout its history in specialized consulting services in Microsoft Dynamics 365, integrations and developments with Power Apps, Power Automate, local infrastructure support and Azure. Intelecto is CMMI level 3 certified. Innovation is one of the pillars that highlights our high-performance team, and this is reflected in our success stories. Intelecto has been recognized by Microsoft with national and international awards.",
       tituloPremio1: "Microsoft Gold Partner",
       detallePremio1:
         "We have been a Microsoft Gold Partner for more than 10 years.",

@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import CountUp from "react-countup";
 import Usuarios from "../../../assets/images/IconChooseUs/Usuarios.svg";
 import Clientes from "../../../assets/images/IconChooseUs/Clientes.svg";
 import Implementacion from "../../../assets/images/IconChooseUs/Implementacion.svg";
@@ -8,11 +9,12 @@ import "./ChooseUs.scss";
 
 export const ChooseUs = () => {
   const { PaginaHome } = useSelector((state) => state.lenguage);
+
   const statics = [
-    { title: "+ 120", detail: PaginaHome.estadistica1, imagen: Clientes },
-    { title: "+ 50.000", detail: PaginaHome.estadistica2, imagen: Usuarios },
-    { title: "+ 250", detail: PaginaHome.estadistica3, imagen: Implementacion },
-    { title: "+ 19", detail: PaginaHome.estadistica4, imagen: Experiencia },
+    { title: 120, detail: PaginaHome.estadistica1, imagen: Clientes },
+    { title: 50000, detail: PaginaHome.estadistica2, imagen: Usuarios },
+    { title: 250, detail: PaginaHome.estadistica3, imagen: Implementacion },
+    { title: 19, detail: PaginaHome.estadistica4, imagen: Experiencia },
   ];
 
   const staticsCard = (title, detail, imagen) => (
@@ -24,8 +26,8 @@ export const ChooseUs = () => {
           style={{ width: "60%", height: "60%" }}
         ></img>
       </div>
-      <span className="custom-card-value" style={{ fontSize: "25px" }}>
-        {title}
+      <span className="custom-card-value">
+        <CountUp start={0} end={title} duration={5} />
       </span>
       <span style={{ fontSize: "19px" }}>{detail}</span>
     </div>
