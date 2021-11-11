@@ -13,6 +13,16 @@
   background-size: cover;
 }
 
+.MuiList-root {
+  background: rgb(22, 22, 22) !important;
+  color: white !important;
+}
+.custom-dropdown-item {
+  &:hover {
+    background: #343434 !important;
+  }
+}
+
 #ContactLanding {
   .custom-content-section {
     justify-content: space-between;
@@ -51,7 +61,7 @@
       align-items: center;
       justify-content: space-between;
 
-      .custom-title-span{
+      .custom-title-span {
         font-size: 23px !important;
       }
     }
@@ -69,6 +79,55 @@
       height: 50px;
       margin: 0;
       font-size: 18px;
+
+      &:disabled {
+        background: gray;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .react-bingmaps {
+    height: 500px !important;
+  }
+  #ContactLanding {
+    .custom-card-container {
+      padding: 0;
+      gap: 10px !important;
+    }
+
+    #ContactSection1 {
+      .custom-row {
+        flex-direction: column-reverse !important;
+        gap: 20px;
+        height: auto;
+      }
+
+      .custom-form-section {
+        width: 100%;
+        margin: 0;
+      }
+
+      .custom-image-container {
+        width: 100%;
+        margin-bottom: 10px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .custom-card {
+        width: 90% !important;
+        max-width: 90% !important;
+      }
+      .custom-row {
+        flex-direction: column;
+        width: 90%;
+      }
+      .custom-content {
+        align-items: center !important;
+      }
     }
   }
 }

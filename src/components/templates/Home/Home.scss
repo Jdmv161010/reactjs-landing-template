@@ -1,34 +1,19 @@
-.custom-home-container {
+#Home {
+  position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 100vw !important;
-}
+  justify-content: center;
 
-#Home {
-  #Section1 {
-    // height: 100%;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.3);
-    justify-content: center;
-
-    video {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      object-fit: cover;
-      z-index: -100;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
-    }
+  video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -10;
   }
 
-  #Section2,
-  #Section3,
-  #Section4,
-  #Section5 {
-    background: rgb(15, 12, 13);
+  a {
+    color: white;
+    text-decoration: none;
   }
 }

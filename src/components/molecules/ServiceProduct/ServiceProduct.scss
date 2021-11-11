@@ -7,7 +7,8 @@
   }
 
   .custom-card {
-    background: rgb(22, 22, 22);
+    background: lighten($color: #161616, $amount: 4);
+    border-radius: 5px;
     width: 650px;
     height: 190px;
     padding: 0 20px !important;
@@ -20,7 +21,6 @@
   }
 
   .custom-card-img {
-    background: rgb(22, 22, 22);
     height: 130px !important;
     width: 130px !important;
     margin-right: 20px;
@@ -39,12 +39,29 @@
     padding: 50px 0;
     gap: 50px;
 
+    .custom-card {
+      width: 90%;
+    }
+
+    .custom-card-value {
+      font-size: 20px !important;
+    }
+
+    .custom-card-img {
+      margin: 0 !important;
+    }
+
+    .custom-card-content {
+      flex: 1 !important;
+      align-items: center;
+    }
+
     .custom-card-container {
       gap: 20px;
     }
 
-    .custom-card {
-      width: 90%;
+    .custom-card-detail {
+      display: none;
     }
   }
 }

@@ -32,6 +32,10 @@ export const ServiceProduct = () => {
     },
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   const staticsCard = (title, detail, imagen) => (
     <div className="custom-card">
       <div className="custom-card-img">
@@ -39,9 +43,10 @@ export const ServiceProduct = () => {
       </div>
       <div className="custom-card-content" style={{ flex: 1 }}>
         <span className="custom-card-value">{title}</span>
-        <span className="custom-card-detail">
-          {detail} <Link to="/services-products">{Others.VerMas}.</Link>
-        </span>
+        <span className="custom-card-detail">{detail}</span>
+        <Link onClick={scrollToTop} to="/services-products">
+          {Others.VerMas}.
+        </Link>
       </div>
     </div>
   );
@@ -58,10 +63,7 @@ export const ServiceProduct = () => {
         )}
       </div>
       <button className="custom-button-field">
-        <a
-          target="_blank"
-          href="https://www.microsoft.com/en-us/solution-providers/partnerdetails/intelecto_bfcc0776-5e02-48ae-a562-ccdd5f4b9ea0/e7416b38-7167-4b51-9f15-ed8debf4c1bb"
-        >
+        <a target="_blank" href="https://acortar.link/PS1xhf">
           {PaginaHome.buttonMicrosoft}
         </a>
       </button>

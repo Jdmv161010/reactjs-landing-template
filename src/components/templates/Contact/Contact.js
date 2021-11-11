@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ReactBingmaps } from "react-bingmaps";
 import { makeStyles, MenuItem, TextField } from "@material-ui/core";
 import "./Contact.scss";
@@ -23,6 +23,21 @@ export const Contact = () => {
   const classes = useStyles();
   const { Contact } = useSelector((state) => state.lenguage);
   const [form, setForm] = useState(initState);
+  const [button, setButton] = useState(true);
+
+  useEffect(() => {
+    if (
+      form.name != "" &&
+      form.phone != "" &&
+      form.email != "" &&
+      form.affair != "" &&
+      form.message != ""
+    ) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  }, [form]);
 
   const handleSubmit = () => {
     window.alert("Enviado correctamente");
@@ -132,7 +147,6 @@ export const Contact = () => {
                     },
                   }}
                   SelectProps={{
-                    native: true,
                     MenuProps: {
                       anchorOrigin: {
                         vertical: "bottom",
@@ -143,36 +157,36 @@ export const Contact = () => {
                   }}
                   onChange={(e) => setForm({ ...form, affair: e.target.value })}
                 >
-                  <option
+                  <MenuItem
                     value={Contact.asunto1}
                     className="custom-dropdown-item"
                   >
                     {Contact.asunto1}
-                  </option>
-                  <option
+                  </MenuItem>
+                  <MenuItem
                     value={Contact.asunto2}
                     className="custom-dropdown-item"
                   >
                     {Contact.asunto2}
-                  </option>
-                  <option
+                  </MenuItem>
+                  <MenuItem
                     value={Contact.asunto3}
                     className="custom-dropdown-item"
                   >
                     {Contact.asunto3}
-                  </option>
-                  <option
+                  </MenuItem>
+                  <MenuItem
                     value={Contact.asunto4}
                     className="custom-dropdown-item"
                   >
                     {Contact.asunto4}
-                  </option>
-                  <option
+                  </MenuItem>
+                  <MenuItem
                     value={Contact.asunto5}
                     className="custom-dropdown-item"
                   >
                     {Contact.asunto5}
-                  </option>
+                  </MenuItem>
                 </TextField>
 
                 <TextField
@@ -195,7 +209,12 @@ export const Contact = () => {
                   }
                 />
               </div>
-              <button className="custom-button-field" onClick={handleSubmit}>
+              <button
+                type="button"
+                disabled={button}
+                className="custom-button-field"
+                onClick={handleSubmit}
+              >
                 {Contact.boton}
               </button>
             </div>

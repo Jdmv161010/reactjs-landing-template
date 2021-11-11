@@ -7,6 +7,9 @@ import Bot from "../../../assets/images/Services&Productos_Images/BotInty.png";
 import BotPDF from "../../../assets/images/Services&Productos_Images/PdfProductos/Bot.jpg";
 import rMarketing from "../../../assets/images/Services&Productos_Images/rMarketing.png";
 import rMarketingPDF from "../../../assets/images/Services&Productos_Images/PdfProductos/rMarketing.pdf";
+import Desarrollo from "../../../assets/images/Desarrollo.png";
+import Infraestructura from "../../../assets/images/Infraestructura.png";
+import CRM from "../../../assets/images/CRM.png";
 import "./ProductsServices.scss";
 
 export const ProductsServices = () => {
@@ -56,8 +59,10 @@ export const ProductsServices = () => {
       </div>
 
       <div id="ProductsServicesSection1" className="custom-content-section">
-        <div className="custom-row" style={{ marginTop: "100px" }}>
-          <div className="custom-image-container CRM" style={{ flex: 1 }}></div>
+        <div className="custom-row reverse" style={{ marginTop: "100px" }}>
+          <div className="custom-image-container" style={{ flex: 1 }}>
+            <img src={CRM} alt="CRM" />
+          </div>
           <div className="custom-content" style={{ flex: 1 }}>
             <span className="custom-title-span">
               {ProductsServices.servicio1}
@@ -85,17 +90,15 @@ export const ProductsServices = () => {
               {ProductsServices.detalle2}
             </span>
           </div>
-          <div
-            className="custom-image-container DESARROLLO"
-            style={{ flex: 1 }}
-          ></div>
+          <div className="custom-image-container" style={{ flex: 1 }}>
+            <img src={Desarrollo} alt="Desarrollo" />
+          </div>
         </div>
 
-        <div className="custom-row" style={{ marginBottom: "80px" }}>
-          <div
-            className="custom-image-container INFRAESTRUCTURA"
-            style={{ flex: 1 }}
-          ></div>
+        <div className="custom-row reverse" style={{ marginBottom: "80px" }}>
+          <div className="custom-image-container" style={{ flex: 1 }}>
+            <img src={Infraestructura} alt="Infraestructura" />
+          </div>
           <div className="custom-content" style={{ flex: 1 }}>
             <span className="custom-title-span">
               {ProductsServices.servicio3}

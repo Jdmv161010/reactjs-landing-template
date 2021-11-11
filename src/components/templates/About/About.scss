@@ -119,3 +119,30 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #AboutLanding {
+    #AboutSection1 {
+      .custom-card-container {
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        padding: 0;
+      }
+      .custom-image-container {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .custom-card {
+        width: 90% !important;
+        max-width: 90% !important;
+      }
+      .custom-row {
+        flex-direction: column;
+        width: 90%;
+      }
+      .custom-content {
+        align-items: center;
+      }
+    }
+  }
+}

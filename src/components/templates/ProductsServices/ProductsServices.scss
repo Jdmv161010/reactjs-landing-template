@@ -7,7 +7,7 @@
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("../../../assets/images/BackGrounds/contact.jpg");
+    url("../../../assets/images/BackGrounds/BG_WhyUs.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -47,16 +47,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      img {
+        height: 100%;
+      }
     }
 
     .CRM {
       background-image: url("../../../assets/images/Services&Productos_Images/CRM_Intelecto_Imagen.jpg") !important;
-    }
-    .DESARROLLO {
-      background-image: url("../../../assets/images/Services&Productos_Images/Imagen_Desarrollo_Intelecto.jpg") !important;
-    }
-    .INFRAESTRUCTURA {
-      background-image: url("../../../assets/images/Services&Productos_Images/Infraestructura_Imagen_Intelecto.jpg") !important;
     }
 
     .custom-content {
@@ -115,5 +113,40 @@
 
   .custom-subtitle-span {
     text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #ProductsServicesLanding {
+    .custom-card-container {
+      padding: 0;
+      gap: 10px !important;
+    }
+    #ProductsServicesSection1 {
+      .custom-row {
+        &.reverse {
+          flex-direction: column-reverse !important;
+        }
+      }
+      .custom-image-container {
+        width: 100%;
+        margin-bottom: 10px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .custom-card {
+        width: 90% !important;
+        max-width: 90% !important;
+      }
+      .custom-row {
+        flex-direction: column;
+        width: 90%;
+      }
+      .custom-content {
+        align-items: center !important;
+      }
+    }
   }
 }

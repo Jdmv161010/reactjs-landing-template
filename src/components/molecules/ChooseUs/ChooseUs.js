@@ -26,7 +26,7 @@ export const ChooseUs = () => {
           style={{ width: "60%", height: "60%" }}
         ></img>
       </div>
-      <span className="custom-card-value">
+      <span className="custom-card-value"> +
         <CountUp start={0} end={title} duration={5} />
       </span>
       <span style={{ fontSize: "19px" }}>{detail}</span>
@@ -38,8 +38,10 @@ export const ChooseUs = () => {
       <div className="custom-content-section">
         <div className="custom-header-content">
           <span className="custom-title-span">{PaginaHome.chooseUs}</span>
-          <span className="custom-subtitle-span span-flex">
-            <cite>{PaginaHome.testimonio}</cite>
+          {/* <span className="span-flex">
+            <cite className="custom-subtitle-span">
+              {PaginaHome.testimonio}
+            </cite>
             <span style={{ textAlign: "left" }}>
               <b>Claudia Fernanda Taborda H.</b>
               <br />
@@ -47,7 +49,7 @@ export const ChooseUs = () => {
               <br />
               Coordinadora de Mejoramiento.
             </span>
-          </span>
+          </span> */}
         </div>
         <div className="custom-card-container">
           {statics.map(({ title, detail, imagen }) =>
