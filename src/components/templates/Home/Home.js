@@ -4,8 +4,10 @@ import { AboutUs } from "../../molecules/AboutUs/AboutUs";
 import { ChooseUs } from "../../molecules/ChooseUs/ChooseUs";
 import { Partners } from "../../molecules/Partners/Partners";
 import { ServiceProduct } from "../../molecules/ServiceProduct/ServiceProduct";
-import BG_Principal from "../../../assets/images/BackGrounds/BG_Principal.mp4";
+import Flyer1 from "../../../assets/images/Flyer1.jpg";
+import Flyer2 from "../../../assets/images/Flyer2.jpg";
 import "./Home.scss";
+import Carousel from "react-bootstrap/Carousel";
 
 export const Home = () => {
   const { PaginaHome } = useSelector((state) => state.lenguage);
@@ -13,15 +15,14 @@ export const Home = () => {
   return (
     <div>
       <div id="Home" className="custom-content-section">
-        <video autoPlay loop muted>
-          <source src={BG_Principal} type="video/mp4" />
-        </video>
-        <span className="custom-title-span" style={{ width: "100%" }}>
-          {PaginaHome.home}
-        </span>
-        <span className="custom-subtitle-span" style={{ width: "50%" }}>
-          {PaginaHome.detalleHome}
-        </span>
+        <Carousel fade controls={false}>
+          <Carousel.Item interval={5000}>
+            <img className="d-block w-100" src={Flyer1} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item interval={5000}>
+            <img className="d-block w-100" src={Flyer2} alt="Second slide" />
+          </Carousel.Item>
+        </Carousel>
       </div>
 
       <div className="custom-separator" />

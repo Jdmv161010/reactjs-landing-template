@@ -22,7 +22,7 @@ export const Contact = () => {
           </div>
         </div>
 
-        <div className="custom-contact-info center">
+        {/* <div className="custom-contact-info center">
           <span className="custom-contact-title">{Footer.item2}</span>
           <div className="custom-contact-location">
             <li>
@@ -31,7 +31,7 @@ export const Contact = () => {
               </a>
             </li>
           </div>
-        </div>
+        </div> */}
         <div className="custom-contact-info" style={{ alignItems: "flex-end" }}>
           <span className="custom-contact-title">{Footer.item3}</span>
           <div id="Icono">
